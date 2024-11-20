@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
@@ -11,7 +13,9 @@ public class CharacterMovement : MonoBehaviour
     private Vector2 _moveInput;
 
     private bool _jumpInput;
+    private int _gravity = 4;
     private bool gravityChanged = false;
+    public GameObject GroundCheck;
     [SerializeField] private Transform _groundCheck;
     [SerializeField] private LayerMask _groundLayer;
     void Awake()
@@ -20,6 +24,7 @@ public class CharacterMovement : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        _rb.gravityScale = _gravity;
     }
     private void OnEnable()
     {
@@ -29,6 +34,7 @@ public class CharacterMovement : MonoBehaviour
     {
         _inputActions.Player.Disable();
     }
+
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -38,7 +44,7 @@ public class CharacterMovement : MonoBehaviour
         //Change Gravity
         _inputActions.Player.Jump.performed += i => _jumpInput = true;
         _inputActions.Player.Jump.canceled += i => _jumpInput = false;
-        CheckGravity(_jumpInput);
+        if (_jumpInput) StartCoroutine(CheckGravity());
 
     }
 
@@ -57,24 +63,25 @@ public class CharacterMovement : MonoBehaviour
         _rb.linearVelocity = _moveInput * speed;
     }
 
-    private void CheckGravity(bool jumpInput)
+    IEnumerator CheckGravity()
     {
-        Debug.Log(IsGrounded());
-        if (jumpInput && IsGrounded() && gravityChanged==false)
+        if (IsGrounded() && gravityChanged == false)
         {
-            _groundCheck.position.Set(0.33f,0.81f, 0);
-            //_groundCheck.SetPositionAndRotation(new Vector3(0.33f,0.81f,0),Quaternion.identity);
-            _rb.gravityScale = -4f;
             _spriteRenderer.flipY = true;
+            _groundCheck.localPosition = new Vector3(0.32f, 0.85f, 0);
+            _gravity *= -1;
+            _rb.gravityScale = _gravity;
             gravityChanged = true;
         }
-        else if (jumpInput && IsGrounded() && gravityChanged == true) 
+        else if (IsGrounded() && gravityChanged == true)
         {
-            _rb.gravityScale = 4f;
             _spriteRenderer.flipY = false;
-            //_groundCheck.SetPositionAndRotation(new Vector3(0.33f, -0.94f, 0), Quaternion.identity);
-            _groundCheck.position.Set(0.33f, -0.94f, 0);
+            _groundCheck.localPosition = new Vector3(0.32f, -0.95f, 0);
+            _gravity *= -1;
+            _rb.gravityScale = _gravity;
+
         }
+        yield return new WaitForSeconds(1);
     }
 
     private bool IsGrounded()
