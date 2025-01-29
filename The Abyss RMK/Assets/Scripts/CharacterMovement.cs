@@ -5,27 +5,35 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
+    public static CharacterMovement instance;
     public float speed;
     private InputSystem_Actions _inputActions;
     private Rigidbody2D _rb;
     private Animator _animator;
-    private SpriteRenderer _spriteRenderer;
+    public SpriteRenderer spriteRenderer;
     private Vector2 _moveInput;
 
     private bool _jumpInput;
-    private int _gravity = 4;
-    private bool _gravityChanged = false;
+    [DoNotSerialize] public int gravity = 4;
+    [DoNotSerialize]public bool gravityChanged = false;
     public GameObject GroundCheck;
     [SerializeField] private Transform _groundCheck;
     [SerializeField] private LayerMask _groundLayer;
 
     void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else Destroy(gameObject);
+
         _inputActions = new InputSystem_Actions();
         _rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
-        _spriteRenderer = GetComponent<SpriteRenderer>();
-        _rb.gravityScale = _gravity;
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        _rb.gravityScale = gravity;
     }
 
     private void OnEnable()
@@ -60,7 +68,7 @@ public class CharacterMovement : MonoBehaviour
         if (_moveInput.x != 0)
         {
             _animator.SetBool("isRunning", true);
-            _spriteRenderer.flipX = _moveInput.x < 0;
+            spriteRenderer.flipX = _moveInput.x < 0;
         }
         else
         {
@@ -70,13 +78,14 @@ public class CharacterMovement : MonoBehaviour
         _rb.linearVelocity = new Vector2(_moveInput.x * speed, _rb.linearVelocity.y);
     }
 
-    private void ChangeGravity()
+    public void ChangeGravity()
     {
-        _gravityChanged = !_gravityChanged;
-        _spriteRenderer.flipY = _gravityChanged;
-        _groundCheck.localPosition = new Vector3(0.32f, _gravityChanged ? 0.85f : -0.95f, 0);
-        _gravity *= -1;
-        _rb.gravityScale = _gravity;
+        Debug.Log("aA");
+        gravityChanged = !gravityChanged;
+        spriteRenderer.flipY = gravityChanged;
+        _groundCheck.localPosition = new Vector3(0.32f, gravityChanged ? 0.85f : -0.95f, 0);
+        gravity *= -1;
+        _rb.gravityScale = gravity;
     }
 
     private bool IsGrounded()
