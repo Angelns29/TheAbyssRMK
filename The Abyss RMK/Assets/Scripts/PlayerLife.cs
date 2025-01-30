@@ -11,7 +11,7 @@ public class PlayerLife : MonoBehaviour
     private Transform _player;
     private SpriteRenderer _sr;
     private Transform checkpoint;
-    //private SoundManagerScript _soundManager;
+    private SoundManagerScript _soundManager;
     //private ChangeLevel _changeLevel;
     private RigidbodyConstraints2D _originalConstraints;
 
@@ -28,10 +28,10 @@ public class PlayerLife : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
         _player = transform;
         _sr = GetComponent<SpriteRenderer>();
-        //_soundManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<SoundManagerScript>();
+        _soundManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<SoundManagerScript>();
         //_changeLevel = GetComponent<ChangeLevel>();
         _originalConstraints = _rb.constraints;
-
+        checkpoint = GameObject.Find("FirstCheckpoint").transform;
         //_player.position = GetCheckpoint();
     }
 
@@ -60,7 +60,7 @@ public class PlayerLife : MonoBehaviour
         }
 
         _animator.SetTrigger("isDeath");
-        //_soundManager.PlaySFX(_soundManager.death);
+        _soundManager.PlaySFX(_soundManager.death);
         _rb.constraints = RigidbodyConstraints2D.FreezePositionX;
 
         StartCoroutine(RespawnPlayer());

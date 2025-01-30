@@ -15,24 +15,34 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private float speed;
     private Vector3 initScale;
     private bool movingLeft = true;
-
+    private bool attaking;
+    private Animator _animator;
     //public SoundManagerScript soundManager;
 
     void Awake()
     {
         //soundManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<SoundManagerScript>();
         initScale = enemy.localScale;
+        _animator = GetComponent<Animator>();
     }
-    void Update()
+    void FixedUpdate()
+    {
+        if (!attaking)
+        {
+            Patrol();
+        }
+        
+    }
+    private void Patrol()
     {
         if (movingLeft)
         {
-            if (enemy.position.x >= leftEdge.position.x)MoveInDirection(-1);
+            if (enemy.position.x >= leftEdge.position.x) MoveInDirection(-1);
             else
             {
                 //soundManager.PlaySFX(soundManager.enemy);
                 ChangeDirection();
-            }   
+            }
         }
         else
         {
@@ -52,5 +62,26 @@ public class EnemyMovement : MonoBehaviour
     {
         enemy.localScale = new Vector3(Mathf.Abs(initScale.x) * _direction, initScale.y, initScale.z);
         enemy.position = new Vector3(enemy.position.x + Time.deltaTime * _direction * speed, enemy.position.y, enemy.position.z);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            StartCoroutine(Attack());
+        }
+    }
+
+    private IEnumerator Attack()
+    {
+        // Activa el estado de ataque
+        attaking = true;
+        _animator.SetTrigger("isAttacking");
+
+        // Espera el tiempo de ataque
+        yield return new WaitForSeconds(1);
+
+        // Desactiva el estado de ataque
+        attaking = false;
     }
 }
