@@ -5,16 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class PlayerLife : MonoBehaviour
 {
+    public static PlayerLife instance;
     private Animator _animator;
     private Rigidbody2D _rb;
     private Transform _player;
     private SpriteRenderer _sr;
+    private Transform checkpoint;
     //private SoundManagerScript _soundManager;
     //private ChangeLevel _changeLevel;
     private RigidbodyConstraints2D _originalConstraints;
 
     private void Start()
     {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else Destroy(gameObject);
+
         _animator = GetComponent<Animator>();
         _rb = GetComponent<Rigidbody2D>();
         _player = transform;
@@ -41,14 +50,6 @@ public class PlayerLife : MonoBehaviour
             HandleDeath();
         }
         else */
-        if (collision.gameObject.CompareTag("Checkpoint"))
-        {
-            //Checkpoint checkpoint = collision.gameObject.GetComponent<Checkpoint>();
-            //if (checkpoint != null)
-            //{
-            //    checkpoint.Activate();
-            //}
-        }
     }
 
     private void HandleDeath()
@@ -80,10 +81,12 @@ public class PlayerLife : MonoBehaviour
         _player.position = GetCheckpoint();
         _rb.gravityScale = 4;
     }
-
+    public void SetCheckpoint(Transform checkpointPosition)
+    {
+        checkpoint = checkpointPosition;
+    }
     public Vector3 GetCheckpoint()
     {
-        GameObject checkpoint = GameObject.Find("Checkpoint");
         if (checkpoint != null)
         {
             return checkpoint.transform.position;

@@ -80,7 +80,6 @@ public class CharacterMovement : MonoBehaviour
 
     public void ChangeGravity()
     {
-        Debug.Log("aA");
         gravityChanged = !gravityChanged;
         spriteRenderer.flipY = gravityChanged;
         _groundCheck.localPosition = new Vector3(0.32f, gravityChanged ? 0.85f : -0.95f, 0);
