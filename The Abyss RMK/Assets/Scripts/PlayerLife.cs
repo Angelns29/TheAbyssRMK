@@ -12,7 +12,7 @@ public class PlayerLife : MonoBehaviour
     private SpriteRenderer _sr;
     private Transform checkpoint;
     private SoundManagerScript _soundManager;
-    //private ChangeLevel _changeLevel;
+    private ChangeLevel _changeLevel;
     private RigidbodyConstraints2D _originalConstraints;
 
     private void Start()
@@ -29,7 +29,7 @@ public class PlayerLife : MonoBehaviour
         _player = transform;
         _sr = GetComponent<SpriteRenderer>();
         _soundManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<SoundManagerScript>();
-        //_changeLevel = GetComponent<ChangeLevel>();
+        _changeLevel = GetComponent<ChangeLevel>();
         _originalConstraints = _rb.constraints;
         checkpoint = GameObject.Find("FirstCheckpoint").transform;
         //_player.position = GetCheckpoint();
@@ -37,9 +37,13 @@ public class PlayerLife : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Obstacle") || collision.gameObject.CompareTag("Enemy"))
-        {
-            HandleDeath();
+        switch(collision.gameObject.tag){
+            case "Obstacle":
+                StartCoroutine(WaitAndHandleDeath(0));
+                return;
+            case "Enemy":
+                StartCoroutine(WaitAndHandleDeath(1));
+                return;
         }
     }
 
@@ -52,8 +56,9 @@ public class PlayerLife : MonoBehaviour
         else */
     }
 
-    private void HandleDeath()
+    private IEnumerator WaitAndHandleDeath(float seconds)
     {
+        if (seconds>0) yield return new WaitForSeconds(seconds);
         if (CharacterMovement.instance.gravityChanged)
         {
             CharacterMovement.instance.ChangeGravity();
@@ -76,7 +81,7 @@ public class PlayerLife : MonoBehaviour
             _player.rotation = Quaternion.Euler(0, 0, 0);
         }
 
-        //GameManager.AddDeath();
+        GameManager.AddDeath();
         _rb.constraints = _originalConstraints;
         _player.position = GetCheckpoint();
         _rb.gravityScale = 4;

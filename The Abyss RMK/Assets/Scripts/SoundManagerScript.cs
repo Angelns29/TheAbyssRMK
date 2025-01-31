@@ -7,8 +7,8 @@ public class SoundManagerScript : MonoBehaviour
 {
     [DoNotSerialize]public static SoundManagerScript soundManagerScript;
     [Header("------------Audio Source --------------")]
-    [SerializeField]AudioSource musicSource;
-    [SerializeField] AudioSource sfxSource;
+    [SerializeField] public AudioSource musicSource;
+    [SerializeField] public AudioSource sfxSource;
 
     [Header("------------Audio Clips -------------")]
     public AudioClip background;
@@ -32,10 +32,30 @@ public class SoundManagerScript : MonoBehaviour
         musicSource.volume = 0.5f;
     }
 
-    public void Start()
+    public void StartMusic()
     {
         musicSource.clip = background;
         musicSource.Play();
+    }
+    public void PauseMusic()
+    {
+        musicSource.Stop();
+    }
+    public void SetVolumeMusic(float volume)
+    {
+        musicSource.volume = volume;
+    }
+    public void SetSoundsMusic(float volume)
+    {
+        sfxSource.volume = volume;
+    }
+    public float GetVolumeMusic()
+    {
+        return musicSource.volume;
+    }
+    public float GetSoundMusic()
+    {
+        return sfxSource.volume;
     }
     public void PlayFinalSong()
     {
