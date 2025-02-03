@@ -14,6 +14,7 @@ Adentrate a las entrañas del Abismo y intenta escapar!.
 <ul>
   <li>←, →, A,D ---- Movimiento Horizontal</li>
   <li>Espacio ----Cambio Gravedad </li>
+  <li>Escape ---- Pausa</li>
   <li> Z ---- Atacar (No Implementado)</li>
   <li>  ---- Esquivar (No Implementado)</li>
 </ul>
@@ -30,6 +31,7 @@ Enter the bowels of the Abyss and try to escape!
 <ul>
   <li>←, →, A,D ---- Horizontal Movement</li>
   <li>Space ----Gravity Change Up</li>
+  <li> Escape ---- Pause </li>
   <li>Z ---- Attack (Not Implemented)</li>
   <li> ---- Dodge (Not Implemented)</li>
 </ul>
