@@ -14,6 +14,7 @@ public class CharacterMovement : MonoBehaviour
     private Vector2 _moveInput;
 
     private bool _jumpInput;
+    public bool interactInput;
     [DoNotSerialize] public int gravity = 4;
     [DoNotSerialize]public bool gravityChanged = false;
     public GameObject GroundCheck;
@@ -61,8 +62,15 @@ public class CharacterMovement : MonoBehaviour
             ChangeGravity();
             _jumpInput = false; // Reset jump input to avoid multiple gravity changes
         }
-    }
 
+        //Dialogues
+        _inputActions.Player.Interact.performed += i => interactInput = true;
+        _inputActions.Player.Interact.canceled += i => interactInput = false;
+    }
+    public bool CheckDialogue()
+    {
+        return interactInput;
+    }
     private void CheckRunning(Vector2 moveInput)
     {
         if (_moveInput.x != 0)
@@ -91,4 +99,5 @@ public class CharacterMovement : MonoBehaviour
     {
         return Physics2D.OverlapCircle(_groundCheck.position, 0.2f, _groundLayer);
     }
+
 }

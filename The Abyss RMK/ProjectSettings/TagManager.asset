@@ -9,6 +9,8 @@ TagManager:
   - Checkpoint
   - EasterEgg
   - Audio
+  - EndProjectile
+  - Projectile
   layers:
   - Default
   - TransparentFX

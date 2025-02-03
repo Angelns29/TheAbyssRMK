@@ -49,11 +49,10 @@ public class PlayerLife : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        /*if (collision.gameObject.CompareTag("Boom"))
+        if (collision.gameObject.CompareTag("Projectile"))
         {
-            HandleDeath();
+            StartCoroutine(WaitAndHandleDeath(0));
         }
-        else */
     }
 
     private IEnumerator WaitAndHandleDeath(float seconds)
@@ -67,7 +66,7 @@ public class PlayerLife : MonoBehaviour
         _animator.SetTrigger("isDeath");
         _soundManager.PlaySFX(_soundManager.death);
         _rb.constraints = RigidbodyConstraints2D.FreezePositionX;
-
+        
         StartCoroutine(RespawnPlayer());
     }
 
@@ -81,7 +80,7 @@ public class PlayerLife : MonoBehaviour
             _player.rotation = Quaternion.Euler(0, 0, 0);
         }
 
-        GameManager.AddDeath();
+        GameManager.gameManager.AddDeath();
         _rb.constraints = _originalConstraints;
         _player.position = GetCheckpoint();
         _rb.gravityScale = 4;

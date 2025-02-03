@@ -20,6 +20,7 @@ public class ChangeLevel : MonoBehaviour
         // Inicializar el diccionario de manejadores de colisiones
         collisionHandlers = new Dictionary<string, System.Action<Vector3>>
         {
+            { "Demo", _ => HandleDemo() },
             { "NextLevel", position => LoadScene(sceneNum + 1, new Vector3(position.x, player.position.y, player.position.z)) },
             { "ReturnLevel", position => LoadScene(sceneNum - 1, new Vector3(-position.x, player.position.y, player.position.z)) },
             { "NextLevelUp", position => LoadScene(sceneNum + 1, new Vector3(player.position.x, position.y, player.position.z)) },
@@ -43,7 +44,11 @@ public class ChangeLevel : MonoBehaviour
         SceneManager.LoadScene(sceneNum);
         player.position = newPosition;
     }
-
+    private void HandleDemo()
+    {
+        SoundManagerScript.soundManagerScript.PlayFinalSong();
+        UICanvas.instance.ShowDemoEnd();
+    }
     private void HandleFinal()
     {
         //soundManager.PlayFinalSong();

@@ -25,11 +25,11 @@ public class GameManager : MonoBehaviour
         timer = 0;
         _deaths = 0;
     }
-    public static void StartTimer()
+    public void StartTimer()
     {
         timerActive = true;
     }
-    public static void StopTime()
+    public void StopTime()
     {
         timerActive = false;
     }
@@ -45,13 +45,19 @@ public class GameManager : MonoBehaviour
             TimeSpan time = TimeSpan.FromSeconds(timer);
             timerText = time.Minutes.ToString() + ":" + time.Seconds.ToString();
         }
+        Debug.Log("Bool time: "+timerActive);
+        Debug.Log(timerText);
     }
-    public static void AddDeath()
+    public void AddDeath()
     {
         _deaths++;
     }
-    public static int GetDeaths()
+    public int GetDeaths()
     {
         return _deaths;
+    }
+    public string GetTime()
+    {
+        return timerText;
     }
 }

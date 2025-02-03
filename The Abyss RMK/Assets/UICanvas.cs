@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -22,7 +23,12 @@ public class UICanvas : MonoBehaviour
     [SerializeField] private Slider soundsSlider;
     [SerializeField] private Toggle fullscreenToggle;
     private GameObject previousMenu;
-
+    [Header("Dialogue")]
+    [SerializeField] private GameObject dialogueMenu;
+    [Header("Demo")]
+    [SerializeField] private GameObject demoMenu;
+    [SerializeField] private TMP_Text deathDemoText;
+    [SerializeField] private TMP_Text timeDemoText;
     [Header("Final")]
     [SerializeField] private GameObject finalMenu;
     [SerializeField] private TMP_Text deathText;
@@ -66,7 +72,7 @@ public class UICanvas : MonoBehaviour
 
     public void DisableStart()
     {
-        GameManager.StartTimer();
+        GameManager.gameManager.StartTimer();
         SoundManagerScript.soundManagerScript.StartMusic();
         startMenu.SetActive(false);
     }
@@ -128,6 +134,7 @@ public class UICanvas : MonoBehaviour
         Time.timeScale = 1.0f;
         pausedGame = false;
         SoundManagerScript.soundManagerScript.SetVolumeMusic(0.4f);
+        GameManager.gameManager.StartTimer();
     }
     public void Pause()
     {
@@ -135,7 +142,34 @@ public class UICanvas : MonoBehaviour
         Time.timeScale = 0f;
         pausedGame = true;
         SoundManagerScript.soundManagerScript.SetVolumeMusic(0.05f);
+        GameManager.gameManager.StopTime();
     }
     
     #endregion 
+
+    public void StartMenuDialogue()
+    {
+        Time.timeScale = 0f;
+        dialogueMenu.SetActive(true);
+    }
+
+    public void HideMenuDialogue()
+    {
+        Time.timeScale = 1f;
+        dialogueMenu.SetActive(false);
+    }
+
+    public void ShowDemoEnd()
+    {
+        Time.timeScale = 0f;
+        GameManager.gameManager.StopTime();
+        StartCoroutine(ShowData());
+    }
+    IEnumerator ShowData()
+    {
+        yield return new WaitForEndOfFrame();
+        demoMenu.SetActive(true);
+        deathDemoText.text = "Deaths: " + GameManager.gameManager.GetDeaths();
+        timeDemoText.text = "Total Time: " + GameManager.gameManager.GetTime();
+    }
 }
