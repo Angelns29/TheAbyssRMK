@@ -13,10 +13,9 @@ Adentrate a las entrañas del Abismo y intenta escapar!.
 <h2>Controles</h2>
 <ul>
   <li>←, →, A,D ---- Movimiento Horizontal</li>
-  <li>↑,W ----Cambio Gravedad Arriba</li>
-  <li>↓,S ----Cambio Gravedad Abajo</li>
+  <li>Espacio ----Cambio Gravedad </li>
   <li> Z ---- Atacar (No Implementado)</li>
-  <li> Space ---- Esquivar (No Implementado)</li>
+  <li>  ---- Esquivar (No Implementado)</li>
 </ul>
 <b>Soporte para Control XBOX, menos en los menús que es necesario Ratón (Compatibilidad total más adelante)</b>
 
@@ -30,9 +29,8 @@ Enter the bowels of the Abyss and try to escape!
 <h2>Controls</h2>
 <ul>
   <li>←, →, A,D ---- Horizontal Movement</li>
-  <li>↑,W ----Gravity Change Up</li>
-  <li>↓,S ----Gravity Down Change</li>
+  <li>Space ----Gravity Change Up</li>
   <li>Z ---- Attack (Not Implemented)</li>
-  <li>Space ---- Dodge (Not Implemented)</li>
+  <li> ---- Dodge (Not Implemented)</li>
 </ul>
 <b></b>Support for Control XBOX, less in the menus that is necessary Mouse (total Compatibility more advance)
