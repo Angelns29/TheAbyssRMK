@@ -3,6 +3,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class UICanvas : MonoBehaviour
 {
@@ -29,6 +30,14 @@ public class UICanvas : MonoBehaviour
     [SerializeField] private GameObject demoMenu;
     [SerializeField] private TMP_Text deathDemoText;
     [SerializeField] private TMP_Text timeDemoText;
+    [Header("Controller Input")]
+    [SerializeField] private GameObject _mainMenuFirst;
+    [SerializeField] private GameObject _settingsFirst;
+    [SerializeField] private GameObject _pauseFirst;
+    [SerializeField] private GameObject _dialogueFirst;
+    [SerializeField] private GameObject _demoFirst;
+
+
     [Header("Final")]
     [SerializeField] private GameObject finalMenu;
     [SerializeField] private TMP_Text deathText;
@@ -50,12 +59,13 @@ public class UICanvas : MonoBehaviour
 
         volumeSlider.value = SoundManagerScript.soundManagerScript.GetVolumeMusic();
         soundsSlider.value = SoundManagerScript.soundManagerScript.GetSoundMusic();
+        EventSystem.current.SetSelectedGameObject(_mainMenuFirst);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button8))
+        if (InputManager.instance.PauseGameInput)
         {
             if (pauseMenu.activeInHierarchy)
             {
@@ -75,6 +85,8 @@ public class UICanvas : MonoBehaviour
         GameManager.gameManager.StartTimer();
         SoundManagerScript.soundManagerScript.StartMusic();
         startMenu.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(null);
+
     }
     public void ExitGame()
     {
@@ -101,12 +113,17 @@ public class UICanvas : MonoBehaviour
             menuToClose.SetActive(false); // Cierra el menú actual
         }
         settingsMenu.SetActive(true);     // Abre el menú de configuración
+        EventSystem.current.SetSelectedGameObject(_settingsFirst);
+
     }
     public void GoBack()
     {
         settingsMenu.SetActive(false);
         previousMenu.SetActive(true);
+        if (previousMenu.name == "PauseMenu") EventSystem.current.SetSelectedGameObject(_pauseFirst);
+        else if (previousMenu.name == "StartMenu") EventSystem.current.SetSelectedGameObject(_mainMenuFirst);
         previousMenu = null;
+
     }
     public void SetFullscreen(bool isFullScreen)
     {
@@ -135,10 +152,14 @@ public class UICanvas : MonoBehaviour
         pausedGame = false;
         SoundManagerScript.soundManagerScript.SetVolumeMusic(0.4f);
         GameManager.gameManager.StartTimer();
+        EventSystem.current.SetSelectedGameObject(null);
+
     }
     public void Pause()
     {
         pauseMenu.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(_pauseFirst);
+
         Time.timeScale = 0f;
         pausedGame = true;
         SoundManagerScript.soundManagerScript.SetVolumeMusic(0.05f);
@@ -151,12 +172,16 @@ public class UICanvas : MonoBehaviour
     {
         Time.timeScale = 0f;
         dialogueMenu.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(_dialogueFirst);
+
     }
 
     public void HideMenuDialogue()
     {
         Time.timeScale = 1f;
         dialogueMenu.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(null);
+
     }
 
     public void ShowDemoEnd()
@@ -169,6 +194,7 @@ public class UICanvas : MonoBehaviour
     {
         yield return new WaitForEndOfFrame();
         demoMenu.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(_demoFirst);
         deathDemoText.text = "Deaths: " + GameManager.gameManager.GetDeaths();
         timeDemoText.text = "Total Time: " + GameManager.gameManager.GetTime();
     }

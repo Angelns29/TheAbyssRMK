@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private Transform _groundCheck;
     [SerializeField] private LayerMask _groundLayer;
 
+
     void Awake()
     {
         if (instance == null)
@@ -35,6 +37,8 @@ public class CharacterMovement : MonoBehaviour
         _animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         _rb.gravityScale = gravity;
+
+        
     }
 
     private void OnEnable()
@@ -66,7 +70,10 @@ public class CharacterMovement : MonoBehaviour
         //Dialogues
         _inputActions.Player.Interact.performed += i => interactInput = true;
         _inputActions.Player.Interact.canceled += i => interactInput = false;
+
+        
     }
+
     public bool CheckDialogue()
     {
         return interactInput;
