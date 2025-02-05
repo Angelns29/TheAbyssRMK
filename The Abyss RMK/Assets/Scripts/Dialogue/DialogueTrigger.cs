@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class DialogueCharacter
 {
-    public string Name;
+    public ScriptableDialogues Name;
     public Sprite Icon;
 }
 
@@ -14,8 +14,7 @@ public class DialogueLine
 {
     public DialogueCharacter Character;
     public DialogueCharacter NPC;
-    [TextArea(3, 10)]
-    public string Line;
+    public ScriptableDialogues Line;
 }
 [System.Serializable]
 public class Dialogue

@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.Localization.Settings;
 
 public class UICanvas : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class UICanvas : MonoBehaviour
     [SerializeField] private Slider volumeSlider;
     [SerializeField] private Slider soundsSlider;
     [SerializeField] private Toggle fullscreenToggle;
+    [DoNotSerialize] public int language;
     private GameObject previousMenu;
     [Header("Dialogue")]
     [SerializeField] private GameObject dialogueMenu;
@@ -137,6 +139,16 @@ public class UICanvas : MonoBehaviour
     {
         SoundManagerScript.soundManagerScript.SetSoundsMusic(volume);
     }
+
+    public void ChangeLanguage(int indexLanguage)
+    {
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[indexLanguage];
+        language = indexLanguage;
+        GameManager.gameManager.SaveLanguage(language);
+    }
+    
+
+    
     #endregion
 
     #region Pause

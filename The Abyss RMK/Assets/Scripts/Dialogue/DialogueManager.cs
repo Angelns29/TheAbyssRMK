@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Components;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
@@ -15,6 +16,22 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI characterName;
     public TextMeshProUGUI npcName;
     public TextMeshProUGUI dialogueArea;
+
+    //Multilanguage
+    public LocalizeStringEvent eventString;
+    public string textEspanol;
+    public string textEnglish;
+    public string textCatalan;
+
+    public LocalizeStringEvent eventStringNPC;
+    public string NPCEspanol;
+    public string NPCEnglish;
+    public string NPCCatalan;
+    
+    public LocalizeStringEvent eventStringCharacter;
+    public string CharacterEspanol;
+    public string CharacterEnglish;
+    public string CharacterCatalan;
 
     private Queue<DialogueLine> lines;
     public bool isDialogueActive = false;
@@ -58,22 +75,42 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         DialogueLine currentLine = lines.Dequeue();
+        //SelectLanguageText(currentLine);
         characterIcon.sprite = currentLine.Character.Icon;
         npcIcon.sprite = currentLine.NPC.Icon;
-        characterName.text = currentLine.Character.Name;
-        npcName.text = currentLine.NPC.Name;
+        //characterName.text = currentLine.Character.Name;
+        //npcName.text = currentLine.NPC.Name;
 
         StopAllCoroutines();
 
         StartCoroutine(TypeSentence(currentLine));
+        
     }
     IEnumerator TypeSentence(DialogueLine dialogueLine)
     {
         dialogueArea.text = "";
-        foreach (char letter in dialogueLine.Line.ToCharArray())
+        npcName.text = "";
+        characterName.text = "";
+        textEspanol = dialogueLine.Line.textEspanol;
+        textCatalan = dialogueLine.Line.textCatalan;
+        textEnglish = dialogueLine.Line.textIngles;
+        eventString.StringReference.RefreshString();
+
+
+        NPCEspanol = dialogueLine.NPC.Name.textEspanol;
+        NPCEnglish = dialogueLine.NPC.Name.textIngles;
+        NPCCatalan = dialogueLine.NPC.Name.textCatalan;
+        eventStringNPC.StringReference.RefreshString();
+
+
+        CharacterEspanol = dialogueLine.Character.Name.textEspanol;
+        CharacterEnglish = dialogueLine.Character.Name.textIngles;
+        CharacterCatalan = dialogueLine.Character.Name.textCatalan;
+        eventStringCharacter.StringReference.RefreshString();
+        /*foreach (char letter in dialogueLine.Line)
         {
             dialogueArea.text += letter;
-        }
+        }*/
         yield return null;
     }
 

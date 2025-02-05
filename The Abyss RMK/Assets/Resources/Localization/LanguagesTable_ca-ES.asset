@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: LanguagesTable_ca-ES
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: ca-ES
+  m_SharedData: {fileID: 11400000, guid: 73b6a911c5fd292449d282e84e1963fc, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 2935154114402189391
+  m_TableData:
+  - m_Id: 8856645632
+    m_Localized: "Comen\xE7ar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128427864064
+    m_Localized: "Configuraci\xF3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 467122106368
+    m_Localized: Aconseguiments
+    m_Metadata:
+      m_Items: []
+  - m_Id: 802767089664
+    m_Localized: Sortir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1616566923264
+    m_Localized: Volum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1735395749888
+    m_Localized: So
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1847299780608
+    m_Localized: Pantalla Complerta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1992154263552
+    m_Localized: Tornar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2229849665536
+    m_Localized: Continuar...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2756427755520
+    m_Localized: Reprendre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 269253188366336
+    m_Localized: '{DialogueManager.textCatalan}'
+    m_Metadata:
+      m_Items:
+      - rid: 2935154114402189391
+  - m_Id: 280385038954496
+    m_Localized: '{DialogueManager.NPCCatalan}'
+    m_Metadata:
+      m_Items:
+      - rid: 2935154114402189391
+  - m_Id: 282010658910208
+    m_Localized: '{DialogueManager.CharacterCatalan}'
+    m_Metadata:
+      m_Items:
+      - rid: 2935154114402189391
+  - m_Id: 290267288940544
+    m_Localized: 'Idioma:'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 2935154114402189391
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 269253188366336
+        - id: 282010658910208
+        - id: 280385038954496

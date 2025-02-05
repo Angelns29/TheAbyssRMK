@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 
 public class GameManager : MonoBehaviour
 {
@@ -24,7 +25,15 @@ public class GameManager : MonoBehaviour
     {
         timer = 0;
         _deaths = 0;
+
+        Invoke(nameof(LoadLocale), 0.1f);
     }
+
+    private void LoadLocale()
+    {
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[GetLanguage()];
+    }
+
     public void StartTimer()
     {
         timerActive = true;
@@ -47,6 +56,14 @@ public class GameManager : MonoBehaviour
         }
         Debug.Log("Bool time: "+timerActive);
         Debug.Log(timerText);
+    }
+    public void SaveLanguage(int language)
+    {
+        PlayerPrefs.SetInt("language",language);
+    }
+    public int GetLanguage()
+    {
+        return PlayerPrefs.GetInt("language");
     }
     public void AddDeath()
     {
