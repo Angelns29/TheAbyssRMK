@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
         _deaths = 0;
 
         Invoke(nameof(LoadLocale), 0.1f);
+        SoundManagerScript.soundManagerScript.SetVolumeMusic(PlayerPrefs.GetFloat("volume"));
     }
 
     private void LoadLocale()

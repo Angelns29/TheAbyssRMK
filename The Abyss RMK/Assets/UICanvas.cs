@@ -170,6 +170,7 @@ public class UICanvas : MonoBehaviour
     }
     public void Pause()
     {
+        Debug.Log("Pause");
         pauseMenu.SetActive(true);
         EventSystem.current.SetSelectedGameObject(_pauseFirst);
 

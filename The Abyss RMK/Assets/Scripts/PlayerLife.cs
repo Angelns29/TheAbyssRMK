@@ -33,7 +33,7 @@ public class PlayerLife : MonoBehaviour
         _changeLevel = GetComponent<ChangeLevel>();
         _originalConstraints = _rb.constraints;
         checkpoint = GameObject.Find("FirstCheckpoint").transform;
-        //_player.position = GetCheckpoint();
+        _player.position = GetCheckpoint();
         _collider = GetComponent<BoxCollider2D>();
     }
 
@@ -60,6 +60,7 @@ public class PlayerLife : MonoBehaviour
     private IEnumerator WaitAndHandleDeath(float seconds)
     {
         _collider.enabled = false; //Desactivamos el collider para que no haya multiples muertes
+        _rb.constraints = RigidbodyConstraints2D.FreezePositionX;
         _rb.constraints = RigidbodyConstraints2D.FreezePositionY;
         if (seconds>0) yield return new WaitForSeconds(seconds);
         if (CharacterMovement.instance.gravityChanged)

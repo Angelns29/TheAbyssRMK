@@ -71,6 +71,10 @@ public class EnemyMovement : MonoBehaviour
         {
             StartCoroutine(Attack());
         }
+        else if (collision.gameObject.CompareTag("Enemy"))
+        {
+            ChangeDirection();
+        }
     }
 
     private IEnumerator Attack()
