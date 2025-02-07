@@ -134,6 +134,7 @@ public class UICanvas : MonoBehaviour
     public void SetVolume(float volume)
     {
         SoundManagerScript.soundManagerScript.SetVolumeMusic(volume);
+        PlayerPrefs.SetFloat("volume",volume);
     }
     public void SetVolumeSounds(float volume)
     {
@@ -162,7 +163,7 @@ public class UICanvas : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1.0f;
         pausedGame = false;
-        SoundManagerScript.soundManagerScript.SetVolumeMusic(0.4f);
+        if (SoundManagerScript.soundManagerScript.GetVolumeMusic() != 0f) SoundManagerScript.soundManagerScript.SetVolumeMusic(PlayerPrefs.GetFloat("volume"));
         GameManager.gameManager.StartTimer();
         EventSystem.current.SetSelectedGameObject(null);
 
@@ -174,7 +175,7 @@ public class UICanvas : MonoBehaviour
 
         Time.timeScale = 0f;
         pausedGame = true;
-        SoundManagerScript.soundManagerScript.SetVolumeMusic(0.05f);
+        if (SoundManagerScript.soundManagerScript.GetVolumeMusic() != 0f) SoundManagerScript.soundManagerScript.SetVolumeMusic(0.05f);
         GameManager.gameManager.StopTime();
     }
     

@@ -29,7 +29,6 @@ public class SoundManagerScript : MonoBehaviour
 
         }
         else Destroy(gameObject);
-        musicSource.volume = 0.5f;
     }
 
     public void StartMusic()

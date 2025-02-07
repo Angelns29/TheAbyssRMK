@@ -10,6 +10,7 @@ public class PlayerLife : MonoBehaviour
     private Rigidbody2D _rb;
     private Transform _player;
     private SpriteRenderer _sr;
+    private BoxCollider2D _collider;
     private Transform checkpoint;
     private SoundManagerScript _soundManager;
     private ChangeLevel _changeLevel;
@@ -33,6 +34,7 @@ public class PlayerLife : MonoBehaviour
         _originalConstraints = _rb.constraints;
         checkpoint = GameObject.Find("FirstCheckpoint").transform;
         //_player.position = GetCheckpoint();
+        _collider = GetComponent<BoxCollider2D>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -57,6 +59,8 @@ public class PlayerLife : MonoBehaviour
 
     private IEnumerator WaitAndHandleDeath(float seconds)
     {
+        _collider.enabled = false; //Desactivamos el collider para que no haya multiples muertes
+        _rb.constraints = RigidbodyConstraints2D.FreezePositionY;
         if (seconds>0) yield return new WaitForSeconds(seconds);
         if (CharacterMovement.instance.gravityChanged)
         {
@@ -65,7 +69,7 @@ public class PlayerLife : MonoBehaviour
 
         _animator.SetTrigger("isDeath");
         _soundManager.PlaySFX(_soundManager.death);
-        _rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+        _rb.constraints = RigidbodyConstraints2D.FreezePositionY;
         
         StartCoroutine(RespawnPlayer());
     }
@@ -84,6 +88,11 @@ public class PlayerLife : MonoBehaviour
         _rb.constraints = _originalConstraints;
         _player.position = GetCheckpoint();
         _rb.gravityScale = 4;
+        _collider.enabled=true;
+        _rb.constraints = RigidbodyConstraints2D.None;
+        _rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+
     }
     public void SetCheckpoint(Transform checkpointPosition)
     {

@@ -5,6 +5,7 @@ public class Parallax : MonoBehaviour
     private float _length, _startPos;
     [SerializeField] public GameObject MyCamera;
     public float ParallaxEffect;
+
     void Start()
     {
         _startPos = transform.position.x;
