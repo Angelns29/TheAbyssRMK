@@ -21,9 +21,7 @@ public class PlayerLife : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
         }
-        else Destroy(gameObject);
 
         _animator = GetComponent<Animator>();
         _rb = GetComponent<Rigidbody2D>();
@@ -33,7 +31,7 @@ public class PlayerLife : MonoBehaviour
         _changeLevel = GetComponent<ChangeLevel>();
         _originalConstraints = _rb.constraints;
         checkpoint = GameObject.Find("FirstCheckpoint").transform;
-        _player.position = GetCheckpoint();
+        //_player.position = GetCheckpoint();
         _collider = GetComponent<BoxCollider2D>();
     }
 
@@ -54,6 +52,28 @@ public class PlayerLife : MonoBehaviour
         if (collision.gameObject.CompareTag("Projectile"))
         {
             StartCoroutine(WaitAndHandleDeath(0));
+        }
+        if (collision.gameObject.name == "ResetGravity")
+        {
+            if (!CharacterMovement.instance.gravityChanged)
+            {
+                CharacterMovement.instance.SetGravity(0); //Ponemos la gravedad a 0 para que no atraviese el mapa
+            }
+            else
+            {
+                CharacterMovement.instance.SetGravity(-2); // Lo ponemos como estaba
+            }
+        }
+        if (collision.gameObject.name == "ResumeGravity")
+        {
+            if (!CharacterMovement.instance.gravityChanged)
+            {
+                CharacterMovement.instance.SetGravity(2); //Lo ponemos como estaba
+            }
+            else
+            {
+                CharacterMovement.instance.SetGravity(0); //Ponemos la gravedad a 0 para que no atraviese el mapa
+            }
         }
     }
 
@@ -107,8 +127,11 @@ public class PlayerLife : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(--ChangeLevel.sceneNum);
-            return ChangeLevel.checkpoint;
+            SceneManager.LoadScene(ChangeLevel.instance.sceneNum);
+            checkpoint = GameObject.Find("FirstCheckpoint").transform;
+            return checkpoint.position;
+            //ChangeLevel.instance.GetCheckpoint();
+            //return ChangeLevel.instance.checkpoint;
         }
 
     }

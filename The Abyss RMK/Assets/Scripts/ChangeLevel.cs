@@ -6,15 +6,23 @@ using System;
 
 public class ChangeLevel : MonoBehaviour
 {
-    public static int sceneNum = 0;
+    public static ChangeLevel instance;
+    [SerializeField] public int sceneNum = 0;
     public Transform player;
     public Rigidbody2D playerRb;
-    [NonSerialized] public static Vector3 checkpoint;
+    [NonSerialized] public Vector3 checkpoint;
     //public UIManager canvasManager;
     //public SoundManagerScript soundManager;
 
     private Dictionary<string, System.Action<Vector3>> collisionHandlers;
 
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
     private void Start()
     {
         // Inicializar el diccionario de manejadores de colisiones
@@ -22,9 +30,6 @@ public class ChangeLevel : MonoBehaviour
         {
             { "Demo", _ => HandleDemo() },
             { "NextLevel", position => LoadScene(sceneNum + 1, new Vector3(position.x, player.position.y, player.position.z)) },
-            { "ReturnLevel", position => LoadScene(sceneNum - 1, new Vector3(-position.x, player.position.y, player.position.z)) },
-            { "NextLevelUp", position => LoadScene(sceneNum + 1, new Vector3(player.position.x, position.y, player.position.z)) },
-            { "ReturnLevelDown", position => LoadScene(sceneNum - 1, new Vector3(player.position.x, position.y + 7, player.position.z)) },
             { "Final", _ => HandleFinal() }
         };
     }
@@ -35,6 +40,7 @@ public class ChangeLevel : MonoBehaviour
         {
             Vector3 position = GetLoadPJ();
             handler(position);
+            //PlayerLife.instance.SetCheckpoint(GameObject.Find("FirstCheckpoint").transform);
         }
     }
 
@@ -73,11 +79,11 @@ public class ChangeLevel : MonoBehaviour
 
     private Vector3 GetLoadPJ()
     {
-        GameObject loadPj = GameObject.Find("LoadPj");
+        GameObject loadPj = GameObject.Find("FirstCheckpoint");
         return loadPj != null ? loadPj.transform.position : checkpoint;
     }
 
-    public static Vector3 GetCheckpoint()
+    public Vector3 GetCheckpoint()
     {
         GameObject checkpointObj = GameObject.Find("Checkpoint");
         return checkpointObj != null ? checkpointObj.transform.position : checkpoint;

@@ -101,7 +101,10 @@ public class CharacterMovement : MonoBehaviour
         gravity *= -1;
         _rb.gravityScale = gravity;
     }
-
+    public void SetGravity(int gravity)
+    {
+        _rb.gravityScale = gravity;
+    }
     private bool IsGrounded()
     {
         return Physics2D.OverlapCircle(_groundCheck.position, 0.2f, _groundLayer);

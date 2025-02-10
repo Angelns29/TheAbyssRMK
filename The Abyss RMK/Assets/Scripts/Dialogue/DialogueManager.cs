@@ -118,6 +118,11 @@ public class DialogueManager : MonoBehaviour
     {
         isDialogueActive = false;
         UICanvas.instance.HideMenuDialogue();
+
+        if (gameObject.name == "NPCAfterKey")
+        {
+            ChangeNPC.instance.DisableWall();
+        }
     }
 
 }

@@ -55,8 +55,8 @@ public class GameManager : MonoBehaviour
             TimeSpan time = TimeSpan.FromSeconds(timer);
             timerText = time.Minutes.ToString() + ":" + time.Seconds.ToString();
         }
-        Debug.Log("Bool time: "+timerActive);
-        Debug.Log(timerText);
+        //Debug.Log("Bool time: "+timerActive);
+        //Debug.Log(timerText);
     }
     public void SaveLanguage(int language)
     {
