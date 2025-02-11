@@ -78,6 +78,11 @@ MonoBehaviour:
     m_Localized: 'Idioma:'
     m_Metadata:
       m_Items: []
+  - m_Id: 2538795990102016
+    m_Localized: "Aquestes flames s\xF3n fragments de la gran flama de l'Abisme,
+      col\xB7lecciona'ls tots per tenir una recompensa, algunes estan molt amagades."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

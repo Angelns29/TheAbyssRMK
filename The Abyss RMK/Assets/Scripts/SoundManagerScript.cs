@@ -18,6 +18,7 @@ public class SoundManagerScript : MonoBehaviour
     public AudioClip jump;
     public AudioClip bombSound;
     public AudioClip enemy;
+    public AudioClip collectable;
 
 
     void Awake()

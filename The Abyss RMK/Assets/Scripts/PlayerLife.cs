@@ -79,9 +79,10 @@ public class PlayerLife : MonoBehaviour
 
     private IEnumerator WaitAndHandleDeath(float seconds)
     {
+        SingletonCamera.instance.DisablePlayer();
         _collider.enabled = false; //Desactivamos el collider para que no haya multiples muertes
-        _rb.constraints = RigidbodyConstraints2D.FreezePositionX;
-        _rb.constraints = RigidbodyConstraints2D.FreezePositionY;
+        
+        //_rb.constraints = RigidbodyConstraints2D.FreezePositionY;
         if (seconds>0) yield return new WaitForSeconds(seconds);
         if (CharacterMovement.instance.gravityChanged)
         {
@@ -90,8 +91,8 @@ public class PlayerLife : MonoBehaviour
 
         _animator.SetTrigger("isDeath");
         _soundManager.PlaySFX(_soundManager.death);
-        _rb.constraints = RigidbodyConstraints2D.FreezePositionY;
-        
+        _rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+
         StartCoroutine(RespawnPlayer());
     }
 
@@ -108,7 +109,8 @@ public class PlayerLife : MonoBehaviour
         GameManager.gameManager.AddDeath();
         _rb.constraints = _originalConstraints;
         _player.position = GetCheckpoint();
-        _rb.gravityScale = 4;
+        SingletonCamera.instance.ResetPlayer();
+        _rb.gravityScale = CharacterMovement.instance.gravity;
         _collider.enabled=true;
         _rb.constraints = RigidbodyConstraints2D.None;
         _rb.constraints = RigidbodyConstraints2D.FreezeRotation;

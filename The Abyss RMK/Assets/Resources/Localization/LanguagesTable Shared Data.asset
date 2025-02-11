@@ -71,6 +71,12 @@ MonoBehaviour:
     m_Key: languageText
     m_Metadata:
       m_Items: []
+  - m_Id: 2538795990102016
+    m_Key: 'CollectableExplanation
+
+'
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

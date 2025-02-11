@@ -12,6 +12,7 @@ TagManager:
   - EndProjectile
   - Projectile
   - KeyNeeded
+  - OpenWall
   layers:
   - Default
   - TransparentFX

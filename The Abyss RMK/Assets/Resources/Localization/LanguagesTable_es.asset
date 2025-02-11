@@ -78,6 +78,11 @@ MonoBehaviour:
     m_Localized: 'Idioma:'
     m_Metadata:
       m_Items: []
+  - m_Id: 2538795990102016
+    m_Localized: "Estas llamas son fragmentos de la gran llama del Abismo, colecci\xF3nalos
+      todos para tener una recompensa, algunas de ellas est\xE1n muy escondidas."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
