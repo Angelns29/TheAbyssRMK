@@ -1,26 +1,24 @@
+using System.Collections;
 using UnityEngine;
 
 public class ProjectileMovement : MonoBehaviour
 {
     private Rigidbody2D _rb;
     private Vector2 _velocity = new(0f, -12f); // Movimiento hacia abajo
-    public Transform spawnRight;    // Punto de spawn para proyectiles que van hacia abajo
-    public Transform spawnLeft;  // Punto de spawn para proyectiles que van hacia arriba
-    //private SoundManagerScript _soundManager;
+    public Transform spawn;    // Punto de spawn para proyectiles que van hacia abajo
+    public int waitTime;
 
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
 
-        // Obtener el SoundManager de manera m�s eficiente
-        //_soundManager = SoundManagerScript.soundManagerScript;
-
-        /*if (_soundManager == null)
-        {
-            Debug.LogError("SoundManager no encontrado.");
-        }*/
+        StartCoroutine(WaitAndMove());
     }
-
+    IEnumerator WaitAndMove()
+    {
+        yield return new WaitForSeconds(waitTime);
+        Move();
+    }
     public void Move()
     {
         _rb.linearVelocity = _velocity; // Aplicar la velocidad hacia abajo
@@ -31,18 +29,9 @@ public class ProjectileMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("EndProjectile"))
         {
-            // Reposicionar el proyectil seg�n su nombre
-            if (gameObject.name == "ProjectileRight")
-            {
-                transform.position = spawnRight.position;// Mover al punto de spawn superior
-                _rb.linearVelocity = new Vector2 (0,0);
-            }
-            else if (gameObject.name == "ProjectileLeft")
-            {
-                transform.position = spawnLeft.position; // Mover al punto de spawn inferior
-                _rb.linearVelocity = new Vector2(0, 0);
-
-            }
+            transform.position = spawn.position;// Mover al punto de spawn superior
+            _rb.linearVelocity = new Vector2(0, 0);
+            
         }
     }
 }
