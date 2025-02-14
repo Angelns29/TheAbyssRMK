@@ -80,6 +80,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Minimap"",
+                    ""type"": ""Button"",
+                    ""id"": ""41e91c4e-20d3-429b-b71f-0331e83a98cb"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -401,6 +410,50 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""action"": ""PauseGame"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6cf4f7bb-bf61-49f3-a958-9f5799482f4f"",
+                    ""path"": ""<XInputController>/select"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""Minimap"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e8bbfaf9-7e6c-4fe7-9498-e2a7b77f924b"",
+                    ""path"": ""<Keyboard>/m"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Minimap"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7439c4a8-62bc-4114-9665-ae08ef4afc31"",
+                    ""path"": ""<Gamepad>/select"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""Minimap"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e12a6e80-40cb-444b-be77-31987869b21d"",
+                    ""path"": ""<DualShockGamepad>/select"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Minimap"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -476,6 +529,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         m_Player_Sprint = m_Player.FindAction("Sprint", throwIfNotFound: true);
         m_Player_PauseGame = m_Player.FindAction("PauseGame", throwIfNotFound: true);
+        m_Player_Minimap = m_Player.FindAction("Minimap", throwIfNotFound: true);
     }
 
     ~@InputSystem_Actions()
@@ -548,6 +602,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Jump;
     private readonly InputAction m_Player_Sprint;
     private readonly InputAction m_Player_PauseGame;
+    private readonly InputAction m_Player_Minimap;
     public struct PlayerActions
     {
         private @InputSystem_Actions m_Wrapper;
@@ -558,6 +613,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
         public InputAction @Sprint => m_Wrapper.m_Player_Sprint;
         public InputAction @PauseGame => m_Wrapper.m_Player_PauseGame;
+        public InputAction @Minimap => m_Wrapper.m_Player_Minimap;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -585,6 +641,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @PauseGame.started += instance.OnPauseGame;
             @PauseGame.performed += instance.OnPauseGame;
             @PauseGame.canceled += instance.OnPauseGame;
+            @Minimap.started += instance.OnMinimap;
+            @Minimap.performed += instance.OnMinimap;
+            @Minimap.canceled += instance.OnMinimap;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -607,6 +666,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @PauseGame.started -= instance.OnPauseGame;
             @PauseGame.performed -= instance.OnPauseGame;
             @PauseGame.canceled -= instance.OnPauseGame;
+            @Minimap.started -= instance.OnMinimap;
+            @Minimap.performed -= instance.OnMinimap;
+            @Minimap.canceled -= instance.OnMinimap;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -677,5 +739,6 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnSprint(InputAction.CallbackContext context);
         void OnPauseGame(InputAction.CallbackContext context);
+        void OnMinimap(InputAction.CallbackContext context);
     }
 }

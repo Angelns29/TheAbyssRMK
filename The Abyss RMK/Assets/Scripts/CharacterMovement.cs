@@ -16,6 +16,7 @@ public class CharacterMovement : MonoBehaviour
 
     private bool _jumpInput;
     public bool interactInput;
+    public bool mapInput;
     [DoNotSerialize] public int gravity = 4;
     [DoNotSerialize]public bool gravityChanged = false;
     public GameObject GroundCheck;
@@ -71,7 +72,10 @@ public class CharacterMovement : MonoBehaviour
         _inputActions.Player.Interact.performed += i => interactInput = true;
         _inputActions.Player.Interact.canceled += i => interactInput = false;
 
-        
+        //Map
+        _inputActions.Player.Minimap.performed += i => mapInput = true;
+        _inputActions.Player.Minimap.canceled += i => mapInput = false;
+
     }
 
     public bool CheckDialogue()

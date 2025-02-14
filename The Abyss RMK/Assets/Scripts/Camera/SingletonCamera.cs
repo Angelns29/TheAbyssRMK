@@ -20,6 +20,7 @@ public class SingletonCamera : MonoBehaviour
         }
         else Destroy(gameObject);
         _camera = GetComponent<CinemachineCamera>();
+        _positionComposer = GetComponent<CinemachinePositionComposer>();
     }
     private void Update()
     {
@@ -34,16 +35,15 @@ public class SingletonCamera : MonoBehaviour
     }
     public void ConfigureCamera()
     {
-        if (_currentSceneIndex >= 1 && _currentSceneIndex != 3)
+        Debug.Log(_currentSceneIndex);
+        if (_currentSceneIndex >= 1 && _currentSceneIndex != 2)
         {
             _camera.Lens.OrthographicSize = 10;
-            _positionComposer.Composition.ScreenPosition = new Vector2(-0.8f,-0.5f);
-            /*_positionComposer.Composition.ScreenPosition.y = -0.5f;
-            _positionComposer.Composition.ScreenPosition.x = -0.8f;*/
+            _positionComposer.Composition.ScreenPosition = new Vector2(-0.20f, 0);
         }
-        else if (_currentSceneIndex == 3)
+        else if (_currentSceneIndex == 2)
         {
-            _positionComposer.Composition.ScreenPosition = new Vector2(0, -0.5f);
+            _positionComposer.Composition.ScreenPosition = new Vector2(0.1f, 0);
         }
     }
     public void DisablePlayer()

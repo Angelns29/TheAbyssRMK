@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.Localization.Settings;
+using UnityEngine.SceneManagement;
 
 public class UICanvas : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class UICanvas : MonoBehaviour
     [SerializeField] private GameObject startMenu;
     [Header("Pause")]
     [SerializeField] private GameObject pauseMenu;
+    [Header("Pause")]
+    [SerializeField] private GameObject mapMenu;
+    [SerializeField] private RawImage _mapImage;
     [Header("Settings")]
     [SerializeField] private GameObject settingsMenu;
     [SerializeField] private Slider volumeSlider;
@@ -78,6 +82,17 @@ public class UICanvas : MonoBehaviour
             {
                 PauseGame(false);
                 Pause();
+            }
+        }
+        if (InputManager.instance.MapeInput)
+        {
+            if (!mapMenu.activeInHierarchy)
+            {
+                OpenMap();
+            }
+            else
+            {
+                CloseMap();
             }
         }
     }
@@ -211,5 +226,47 @@ public class UICanvas : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(_demoFirst);
         deathDemoText.text = "Deaths: " + GameManager.gameManager.GetDeaths();
         timeDemoText.text = "Total Time: " + GameManager.gameManager.GetTime();
+    }
+
+    public void OpenMap()
+    {
+        int activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        switch (activeSceneIndex)
+        {
+            case 0:
+                _mapImage.texture = (Texture) Resources.Load("Map/Level1Map");
+                StartCoroutine(ShowMap());
+                return;
+            case 1:
+                _mapImage.texture = (Texture) Resources.Load("Map/Level2Map");
+                StartCoroutine(ShowMap());
+
+                return;
+            case 2:
+                _mapImage.texture = (Texture) Resources.Load("Map/Level3Map");
+                StartCoroutine(ShowMap());
+
+                return;
+            default:
+                _mapImage.texture = (Texture)Resources.Load("Map/Level1Map");
+                StartCoroutine(ShowMap());
+                return;
+        }
+
+        
+        
+    }
+    IEnumerator ShowMap()
+    {
+        yield return new WaitForEndOfFrame();
+        Debug.Log("LlegaAqui");
+        Time.timeScale = 0;
+        mapMenu.SetActive(true);
+    }
+
+    public void CloseMap()
+    {
+        Time.timeScale = 1;
+        mapMenu.SetActive(false);
     }
 }

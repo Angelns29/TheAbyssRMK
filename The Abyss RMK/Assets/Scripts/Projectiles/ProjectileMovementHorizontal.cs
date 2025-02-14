@@ -14,7 +14,14 @@ public class ProjectileMovementHorizontal : MonoBehaviour
         //Move();
         StartCoroutine(WaitAndMove());
     }
-
+    private void FixedUpdate()
+    {
+        RotateRock();
+    }
+    public void RotateRock()
+    {
+        transform.Rotate(new Vector3 (0,0,transform.rotation.z+5),Space.World);
+    }
     IEnumerator WaitAndMove()
     {
         yield return new WaitForSeconds(waitTime);
