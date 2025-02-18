@@ -38,7 +38,7 @@ public class SingletonCamera : MonoBehaviour
         Debug.Log(_currentSceneIndex);
         if (_currentSceneIndex >= 1 && _currentSceneIndex != 2)
         {
-            _camera.Lens.OrthographicSize = 10;
+            _camera.Lens.OrthographicSize = 9;
             _positionComposer.Composition.ScreenPosition = new Vector2(-0.20f, 0);
         }
         else if (_currentSceneIndex == 2)
