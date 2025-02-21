@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour
         collectables.Add("collectableLevel22", false);
         collectables.Add("collectableLevel31", false);
         collectables.Add("collectableLevel32", false);
+
     }
 
     private void LoadLocale()

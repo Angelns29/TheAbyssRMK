@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4132435149449770644}
   - component: {fileID: 2061823151937526604}
-  - component: {fileID: 7178083792073148892}
   m_Layer: 0
   m_Name: CameraMap
   m_TagString: Untagged
@@ -67,12 +66,12 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 11.011954
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 35
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 40
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 53474183cad282744b9f973182ffa944, type: 2}
   m_TargetDisplay: 0
@@ -84,15 +83,3 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &7178083792073148892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7784629083701565845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3c3986f48a327f4dafd5f18f2da1ea9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

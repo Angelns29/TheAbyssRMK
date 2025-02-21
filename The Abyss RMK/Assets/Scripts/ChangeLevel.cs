@@ -41,6 +41,7 @@ public class ChangeLevel : MonoBehaviour
             Vector3 position = GetLoadPJ();
             handler(position);
             //PlayerLife.instance.SetCheckpoint(GameObject.Find("FirstCheckpoint").transform);
+            ChangeMinimapLevel.instance.SetCurrentLevel(sceneNum);
         }
     }
 
