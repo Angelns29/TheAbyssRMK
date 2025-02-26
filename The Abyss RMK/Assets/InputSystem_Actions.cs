@@ -456,6 +456,224 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""MinimapControls"",
+            ""id"": ""405f4c92-13e8-47bf-8337-ba1c7bc3f701"",
+            ""actions"": [
+                {
+                    ""name"": ""Zoom"",
+                    ""type"": ""Value"",
+                    ""id"": ""64458327-e5d3-4783-b6b7-bec81941132c"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Pan"",
+                    ""type"": ""Value"",
+                    ""id"": ""7beebc6f-d2b9-4f14-8ead-23969728e6bf"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""PanClick"",
+                    ""type"": ""Button"",
+                    ""id"": ""8aaa86dc-4efb-43ba-93fe-0f864e37abe8"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ResetView"",
+                    ""type"": ""Button"",
+                    ""id"": ""6d5cb640-313b-430d-8b7d-fb62af317a01"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""CenterOnPlayer"",
+                    ""type"": ""Button"",
+                    ""id"": ""87fb9fc9-ea57-4a9b-aa4b-d83855a891d2"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""29b3d650-ba2f-4b20-9750-697b969bdf2a"",
+                    ""path"": ""<Mouse>/scroll/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d31e7ed8-cb5c-477c-aac6-c141dab752f9"",
+                    ""path"": ""<Gamepad>/rightStick/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""14368f7a-62cd-47f2-ae0d-cbc102537b85"",
+                    ""path"": ""<DualShockGamepad>/rightStick/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""Zoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5ecaefdb-1f8d-4575-aefc-886c400e4627"",
+                    ""path"": ""<Mouse>/delta"",
+                    ""interactions"": """",
+                    ""processors"": ""ScaleVector2(x=0.5,y=0.5)"",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Pan"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2d389350-e9da-4ce3-a7f6-82dd42301cca"",
+                    ""path"": ""<Gamepad>/dpad"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""Pan"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c0e40755-a984-4ad2-8076-71c583f8a329"",
+                    ""path"": ""<DualShockGamepad>/dpad"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""Pan"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""893fbda4-6850-463d-a894-f93431216c74"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""PanClick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""636f7e84-521d-40ed-bd0c-990b6ee33a55"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""PanClick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5c4db156-4f29-41c0-9c76-298774aba552"",
+                    ""path"": ""<DualShockGamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""PanClick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""173766ea-aaa1-4784-8bfa-e385a51df936"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""ResetView"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bae2af75-8f55-47c1-bf18-0e308373cc00"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""ResetView"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ee3cd5e8-e242-408e-bf5d-25959822107e"",
+                    ""path"": ""<DualShockGamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""ResetView"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4763c166-f021-4754-a12f-9b8db38d9f22"",
+                    ""path"": ""<Keyboard>/c"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""CenterOnPlayer"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fd06866f-279d-4a06-94fe-b6f283b98e2d"",
+                    ""path"": ""<Gamepad>/rightStickPress"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""CenterOnPlayer"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""634014bf-9ea3-4b19-8724-03d36b6571a1"",
+                    ""path"": ""<DualShockGamepad>/rightStickPress"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""CenterOnPlayer"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -530,11 +748,19 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Player_Sprint = m_Player.FindAction("Sprint", throwIfNotFound: true);
         m_Player_PauseGame = m_Player.FindAction("PauseGame", throwIfNotFound: true);
         m_Player_Minimap = m_Player.FindAction("Minimap", throwIfNotFound: true);
+        // MinimapControls
+        m_MinimapControls = asset.FindActionMap("MinimapControls", throwIfNotFound: true);
+        m_MinimapControls_Zoom = m_MinimapControls.FindAction("Zoom", throwIfNotFound: true);
+        m_MinimapControls_Pan = m_MinimapControls.FindAction("Pan", throwIfNotFound: true);
+        m_MinimapControls_PanClick = m_MinimapControls.FindAction("PanClick", throwIfNotFound: true);
+        m_MinimapControls_ResetView = m_MinimapControls.FindAction("ResetView", throwIfNotFound: true);
+        m_MinimapControls_CenterOnPlayer = m_MinimapControls.FindAction("CenterOnPlayer", throwIfNotFound: true);
     }
 
     ~@InputSystem_Actions()
     {
         UnityEngine.Debug.Assert(!m_Player.enabled, "This will cause a leak and performance issues, InputSystem_Actions.Player.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_MinimapControls.enabled, "This will cause a leak and performance issues, InputSystem_Actions.MinimapControls.Disable() has not been called.");
     }
 
     public void Dispose()
@@ -686,6 +912,84 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         }
     }
     public PlayerActions @Player => new PlayerActions(this);
+
+    // MinimapControls
+    private readonly InputActionMap m_MinimapControls;
+    private List<IMinimapControlsActions> m_MinimapControlsActionsCallbackInterfaces = new List<IMinimapControlsActions>();
+    private readonly InputAction m_MinimapControls_Zoom;
+    private readonly InputAction m_MinimapControls_Pan;
+    private readonly InputAction m_MinimapControls_PanClick;
+    private readonly InputAction m_MinimapControls_ResetView;
+    private readonly InputAction m_MinimapControls_CenterOnPlayer;
+    public struct MinimapControlsActions
+    {
+        private @InputSystem_Actions m_Wrapper;
+        public MinimapControlsActions(@InputSystem_Actions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Zoom => m_Wrapper.m_MinimapControls_Zoom;
+        public InputAction @Pan => m_Wrapper.m_MinimapControls_Pan;
+        public InputAction @PanClick => m_Wrapper.m_MinimapControls_PanClick;
+        public InputAction @ResetView => m_Wrapper.m_MinimapControls_ResetView;
+        public InputAction @CenterOnPlayer => m_Wrapper.m_MinimapControls_CenterOnPlayer;
+        public InputActionMap Get() { return m_Wrapper.m_MinimapControls; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(MinimapControlsActions set) { return set.Get(); }
+        public void AddCallbacks(IMinimapControlsActions instance)
+        {
+            if (instance == null || m_Wrapper.m_MinimapControlsActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_MinimapControlsActionsCallbackInterfaces.Add(instance);
+            @Zoom.started += instance.OnZoom;
+            @Zoom.performed += instance.OnZoom;
+            @Zoom.canceled += instance.OnZoom;
+            @Pan.started += instance.OnPan;
+            @Pan.performed += instance.OnPan;
+            @Pan.canceled += instance.OnPan;
+            @PanClick.started += instance.OnPanClick;
+            @PanClick.performed += instance.OnPanClick;
+            @PanClick.canceled += instance.OnPanClick;
+            @ResetView.started += instance.OnResetView;
+            @ResetView.performed += instance.OnResetView;
+            @ResetView.canceled += instance.OnResetView;
+            @CenterOnPlayer.started += instance.OnCenterOnPlayer;
+            @CenterOnPlayer.performed += instance.OnCenterOnPlayer;
+            @CenterOnPlayer.canceled += instance.OnCenterOnPlayer;
+        }
+
+        private void UnregisterCallbacks(IMinimapControlsActions instance)
+        {
+            @Zoom.started -= instance.OnZoom;
+            @Zoom.performed -= instance.OnZoom;
+            @Zoom.canceled -= instance.OnZoom;
+            @Pan.started -= instance.OnPan;
+            @Pan.performed -= instance.OnPan;
+            @Pan.canceled -= instance.OnPan;
+            @PanClick.started -= instance.OnPanClick;
+            @PanClick.performed -= instance.OnPanClick;
+            @PanClick.canceled -= instance.OnPanClick;
+            @ResetView.started -= instance.OnResetView;
+            @ResetView.performed -= instance.OnResetView;
+            @ResetView.canceled -= instance.OnResetView;
+            @CenterOnPlayer.started -= instance.OnCenterOnPlayer;
+            @CenterOnPlayer.performed -= instance.OnCenterOnPlayer;
+            @CenterOnPlayer.canceled -= instance.OnCenterOnPlayer;
+        }
+
+        public void RemoveCallbacks(IMinimapControlsActions instance)
+        {
+            if (m_Wrapper.m_MinimapControlsActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IMinimapControlsActions instance)
+        {
+            foreach (var item in m_Wrapper.m_MinimapControlsActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_MinimapControlsActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public MinimapControlsActions @MinimapControls => new MinimapControlsActions(this);
     private int m_KeyboardMouseSchemeIndex = -1;
     public InputControlScheme KeyboardMouseScheme
     {
@@ -740,5 +1044,13 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         void OnSprint(InputAction.CallbackContext context);
         void OnPauseGame(InputAction.CallbackContext context);
         void OnMinimap(InputAction.CallbackContext context);
+    }
+    public interface IMinimapControlsActions
+    {
+        void OnZoom(InputAction.CallbackContext context);
+        void OnPan(InputAction.CallbackContext context);
+        void OnPanClick(InputAction.CallbackContext context);
+        void OnResetView(InputAction.CallbackContext context);
+        void OnCenterOnPlayer(InputAction.CallbackContext context);
     }
 }

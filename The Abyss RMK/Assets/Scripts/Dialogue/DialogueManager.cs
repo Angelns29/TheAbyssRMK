@@ -4,6 +4,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization.Components;
+using UnityEngine.Tilemaps;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
@@ -118,11 +119,16 @@ public class DialogueManager : MonoBehaviour
     {
         isDialogueActive = false;
         UICanvas.instance.HideMenuDialogue();
-
-        if (ChangeNPC.instance.NPCAfterKey.activeInHierarchy)
+        
+        if (gameObject.TryGetComponent<ChangeNPC>(out var npc))
         {
-            ChangeNPC.instance.DisableWall();
+            if (npc.isActiveAndEnabled) ChangeNPC.instance.DisableWall(); 
+            /*if (ChangeNPC.instance.NPCAfterKey.activeInHierarchy)
+            {
+                ChangeNPC.instance.DisableWall();
+            }*/
         }
+        
     }
 
 }

@@ -410,7 +410,7 @@ GameObject:
   - component: {fileID: 484519168}
   m_Layer: 3
   m_Name: Level2
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -487309,7 +487309,7 @@ Transform:
   m_GameObject: {fileID: 871661471}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 62.54576, y: 62.15638, z: -0.36230063}
+  m_LocalPosition: {x: -79.45425, y: 53.15638, z: -0.36230063}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -487611,7 +487611,7 @@ Transform:
   m_GameObject: {fileID: 1040038250}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 288.43, y: -17.32, z: -1.0227027}
+  m_LocalPosition: {x: 262.78336, y: -37.712925, z: -1.0227027}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -487642,7 +487642,7 @@ Transform:
   m_GameObject: {fileID: 1123044923}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 52.773308, y: 80.35797, z: -0.063986585}
+  m_LocalPosition: {x: -89.2267, y: 71.35797, z: -0.063986585}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -487714,7 +487714,7 @@ Transform:
   m_GameObject: {fileID: 1213628494}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 137.1512, y: 72, z: 1.3401487}
+  m_LocalPosition: {x: -4.8488083, y: 63, z: 1.3401487}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -487757,8 +487757,10 @@ MonoBehaviour:
   fogTexture: {fileID: 0}
   revealRadius: 10
   minimapFogMaterial: {fileID: 2100000, guid: d46264d1461d3a543806cbc52d6a63e1, type: 2}
-  mapMin: {x: -20, y: -84}
-  mapMax: {x: 292, y: 106}
+  mapMin: {x: -161.2, y: -94.5}
+  mapMax: {x: 149.7, y: 95.9}
+  previousMapWidth: 0
+  previousMapHeight: 0
 --- !u!4 &1215312330
 Transform:
   m_ObjectHideFlags: 0
@@ -487768,7 +487770,7 @@ Transform:
   m_GameObject: {fileID: 1215312328}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.145884, y: 26.150995, z: -0.059901122}
+  m_LocalPosition: {x: 3.4992409, y: 5.758069, z: -0.059901122}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -487926,7 +487928,7 @@ Transform:
   m_GameObject: {fileID: 1248894269}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6533561, y: 41.792927, z: -10.656092}
+  m_LocalPosition: {x: -141.9, y: 31.5, z: -10.656092}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -488788,7 +488790,7 @@ GameObject:
   - component: {fileID: 1913388696}
   - component: {fileID: 1913388695}
   - component: {fileID: 1913388694}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Obstacles
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -496791,7 +496793,7 @@ Transform:
   m_GameObject: {fileID: 1934227311}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 284.57, y: -17.11, z: -0.509656}
+  m_LocalPosition: {x: 142.57, y: -26.11, z: -0.509656}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -497091,7 +497093,7 @@ Transform:
   m_GameObject: {fileID: 2030368689}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -142, y: -9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -497338,7 +497340,7 @@ GameObject:
   - component: {fileID: 7710045211646548297}
   m_Layer: 0
   m_Name: CameraMap
-  m_TagString: Untagged
+  m_TagString: CameraMap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -497729,7 +497731,7 @@ Transform:
   m_GameObject: {fileID: 1903345434038475664}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 138, y: 10, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -497933,7 +497935,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 40
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 5481eb84a2843ac43869ff68a1abc1f4, type: 2}
   m_TargetDisplay: 0
