@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2afc288c9a93d8341b0ec172fb0fc142, type: 3}
+  m_Name: Dialogue7
+  m_EditorClassIdentifier: 
+  textIngles: Do you see the wall behind me? , if you look carefully there are some
+    small cracks in that wall, you have the ability to go through them.
+  textEspanol: "\xBFVes la pared que hay detr\xE1s m\xEDo?, si observas bien hay
+    unas peque\xF1as grietas en esa pared, tu tienes la habilidad de atravesarlas."
+  textCatalan: "Veus la paret que hi ha darrere meu?, si observes b\xE9 hi ha unes
+    petites esquerdes en aquesta paret, tu tens l'habilitat de travessar-les."
