@@ -555,7 +555,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""2d389350-e9da-4ce3-a7f6-82dd42301cca"",
-                    ""path"": ""<Gamepad>/dpad"",
+                    ""path"": ""<Gamepad>/leftStick"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
@@ -566,7 +566,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""c0e40755-a984-4ad2-8076-71c583f8a329"",
-                    ""path"": ""<DualShockGamepad>/dpad"",
+                    ""path"": ""<DualShockGamepad>/leftStick"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",

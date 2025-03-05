@@ -234,6 +234,7 @@ public class UICanvas : MonoBehaviour
         switch (activeSceneIndex)
         {
             case 0:
+
                 _mapImage.material = Resources.Load<Material>("Map/MinimapLevel1Fog");
                 StartCoroutine(ShowMap());
                 return;
@@ -247,8 +248,13 @@ public class UICanvas : MonoBehaviour
                 StartCoroutine(ShowMap());
 
                 return;
+            case 3:
+                _mapImage.material = Resources.Load<Material>("Map/MinimapLevel4Fog");
+                StartCoroutine(ShowMap());
+
+                return;
             default:
-                _mapImage.texture = (Texture)Resources.Load("Map/Level1Map");
+                _mapImage.texture = (Texture)Resources.Load("Map/MinimapLevel1Fog");
                 StartCoroutine(ShowMap());
                 return;
         }
@@ -257,9 +263,9 @@ public class UICanvas : MonoBehaviour
     IEnumerator ShowMap()
     {
         yield return new WaitForEndOfFrame();
-        Debug.Log("LlegaAqui");
         Time.timeScale = 0;
         mapMenu.SetActive(true);
+        MinimapZoom.Instance.SetMaterial(_mapImage.material);
     }
 
     public void CloseMap()

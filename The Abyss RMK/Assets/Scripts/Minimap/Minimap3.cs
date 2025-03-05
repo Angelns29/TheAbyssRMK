@@ -30,6 +30,8 @@ public class Minimap3 : MonoBehaviour
             textureWidth = 640;
             textureHeight = 315;
             fogTexture = new Texture2D(textureWidth, textureHeight, TextureFormat.ARGB32, false);
+            fogTexture.wrapMode = TextureWrapMode.Clamp;
+            fogTexture.filterMode = FilterMode.Bilinear;
         }
         else
         {

@@ -1,3 +1,5 @@
+using System.Collections;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -8,10 +10,16 @@ public class MinimapZoom : MonoBehaviour
 {
     public static MinimapZoom Instance;
     public Camera minimapCamera;                 // Cámara del minimapa
-    public float zoomSpeed = 5f;                 // Velocidad del zoom
-    public float minZoom;                   // Zoom máximo (cercano)
-    public float maxZoom;                  // Zoom mínimo (alejado)
+    public float zoomSpeed = 0.5f;                 // Velocidad del zoom
+    public float minZoom = 1;                   // Zoom máximo (cercano)
+    public float maxZoom = 5;                  // Zoom mínimo (alejado)
     public float defaultZoom;
+    public float zoomLevel;
+    public Material minimapFogMaterial;
+    private Vector2 minimapOffset = Vector2.zero; // Offset inicial en el minimapa
+    private float mapWidth;
+    private float mapHeight;
+
     public float panSpeed = 200f;                  // Velocidad al mover la cámara
     public Rect mapBounds;                       // Límites del mapa para el paneo
     public Slider zoomSlider;                    // Slider UI para mostrar el nivel de zoom
@@ -29,14 +37,8 @@ public class MinimapZoom : MonoBehaviour
         }     
         inputActions = new InputSystem_Actions();    
         player = GameObject.FindWithTag("Player").transform;
-        /*minimapCamera = GameObject.FindWithTag("CameraMap").GetComponent<Camera>();
-        defaultPosition = minimapCamera.transform.position;
-        defaultZoom = minimapCamera.orthographicSize;
-        minZoom = defaultZoom - 20;
-        maxZoom = defaultZoom + 20;
-        CalculateMapBounds();*/
         UpdateReferences();
-
+        ResetCamera();
         // Suscribirse al evento de cambio de escena
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
@@ -49,16 +51,29 @@ public class MinimapZoom : MonoBehaviour
     private void UpdateReferences()
     {
         player = GameObject.FindWithTag("Player")?.transform;
+        //StartCoroutine(GetMaterial());
+        minimapFogMaterial = GameObject.Find("MinimapImage").GetComponent<RawImage>().material;
+
+        // Ajustar tamaño de minimapa
+        mapWidth = minimapFogMaterial.mainTexture.width;
+        mapHeight = minimapFogMaterial.mainTexture.height;
+
+
         minimapCamera = GameObject.FindWithTag("CameraMap")?.GetComponent<Camera>();
 
         if (minimapCamera != null)
         {
             defaultPosition = minimapCamera.transform.position;
-            defaultZoom = minimapCamera.orthographicSize;
-            minZoom = defaultZoom - 20;
-            maxZoom = defaultZoom + 20;
+            //defaultZoom = minimapCamera.orthographicSize;
+            //minZoom = defaultZoom - 20;
+            //maxZoom = defaultZoom + 20;
+            
         }
         CalculateMapBounds();
+    }
+    public void SetMaterial(Material material)
+    {
+        minimapFogMaterial = material;
     }
     private void OnEnable()
     {
@@ -86,7 +101,7 @@ public class MinimapZoom : MonoBehaviour
     void Update()
     {
         HandleZoom();
-        //HandlePan();
+        HandlePan();
         UpdateZoomSlider();
     }
     private void CalculateMapBounds()
@@ -105,7 +120,43 @@ public class MinimapZoom : MonoBehaviour
         }
     }
 
+    void HandleZoom()
+    {
+        float scrollValue = inputActions.MinimapControls.Zoom.ReadValue<float>();
 
+        if (Mathf.Abs(scrollValue) > 0.01f)
+        {
+            zoomLevel += scrollValue * zoomSpeed;
+            zoomLevel = Mathf.Clamp(zoomLevel, minZoom, maxZoom);
+
+            UpdateMinimapZoomAndOffset(zoomLevel);  // Ajustar Zoom y Offset
+        }
+    }
+
+
+    Vector2 GetPlayerUV()
+    {
+        float u = Mathf.InverseLerp(mapBounds.xMin, mapBounds.xMax, player.position.x);
+        float v = Mathf.InverseLerp(mapBounds.yMin, mapBounds.yMax, player.position.y);
+        return new Vector2(u, v);
+    }
+    void UpdateMinimapZoomAndOffset(float zoomAmount)
+    {
+        // Actualizar el Zoom
+        minimapFogMaterial.SetFloat("_Zoom", zoomAmount);
+
+        // Obtener la posición normalizada del personaje en el minimapa
+        Vector2 playerMinimapPos = GetPlayerUV();
+
+        // Convertir la posición normalizada a un offset en UV (-0.5 a 0.5)
+        Vector2 offset = new Vector2(playerMinimapPos.x - 0.5f, playerMinimapPos.y - 0.5f);
+
+        // Aplicar el offset al material
+        minimapFogMaterial.SetVector("_Offset", offset / zoomAmount);  //Offset depende del zoom
+    }
+
+
+    /*
     // Controla el Zoom
     void HandleZoom()
     {
@@ -138,77 +189,54 @@ public class MinimapZoom : MonoBehaviour
             minimapCamera.transform.position = clampedPosition;
         }
     }
+    */
 
+    // Controla el Paneo NO FUNCIONA GAMEPAD
 
-
-    /*
-    void HandleZoom()
-    {
-        float scrollValue = inputActions.MinimapControls.Zoom.ReadValue<float>();
-        if (Mathf.Abs(scrollValue) > 0.01f)
-        {
-            minimapCamera.orthographicSize -= scrollValue * zoomSpeed;
-            minimapCamera.orthographicSize = Mathf.Clamp(minimapCamera.orthographicSize, minZoom, maxZoom);
-        }
-    }*/
-
-    // Controla el Paneo NO FUNCIONA
     void HandlePan()
     {
         Vector2 panInput = inputActions.MinimapControls.Pan.ReadValue<Vector2>();
 
-        // Detecta si el input viene del Mouse o Gamepad
-        bool isMousePanning = Mouse.current != null && Mouse.current.rightButton.isPressed;
-        bool isGamepadPanning = Gamepad.current != null && panInput.magnitude > 0.1f || panInput.magnitude < -0.1f;
-
-        if (isMousePanning || isGamepadPanning)
+        if (isPanning)
         {
-            Vector3 panMovement;
+            float mouseSensitivity = 0.005f;
+            Vector2 panMovement = new Vector2(-panInput.x, -panInput.y) * mouseSensitivity * zoomLevel;
 
-            if (isMousePanning)
-            {
-                // Movimiento con Mouse Delta (escala para controlar sensibilidad)
-                float mouseSensitivity = 0.5f;
-                panMovement = new Vector3(-panInput.x, -panInput.y, 0) * mouseSensitivity * minimapCamera.orthographicSize;
-            }
-            else
-            {
-                // Movimiento con Gamepad Stick (usa panSpeed y DeltaTime)
-                panMovement = new Vector3(-panInput.x, -panInput.y, 0) * panSpeed * minimapCamera.orthographicSize * Time.deltaTime;
-            }
+            // **Calcula los límites del paneo usando el tamaño de la textura del minimapa**
+            float maxOffsetX = (mapWidth - 1f) / (2f * zoomLevel);
+            float maxOffsetY = (mapHeight - 1f) / (2f * zoomLevel);
 
-            // Calcula nueva posición
-            Vector3 targetPosition = minimapCamera.transform.position + panMovement;
+            // **Aplica el offset y lo limita**
+            minimapOffset += panMovement;
+            minimapOffset.x = Mathf.Clamp(minimapOffset.x, -maxOffsetX, maxOffsetX);
+            minimapOffset.y = Mathf.Clamp(minimapOffset.y, -maxOffsetY, maxOffsetY);
 
-            // Limita el movimiento dentro de los bounds
-            float camHalfHeight = minimapCamera.orthographicSize;
-            float camHalfWidth = camHalfHeight * minimapCamera.aspect;
-
-            targetPosition.x = Mathf.Clamp(targetPosition.x, mapBounds.xMin + camHalfWidth, mapBounds.xMax - camHalfWidth);
-            targetPosition.y = Mathf.Clamp(targetPosition.y, mapBounds.yMin + camHalfHeight, mapBounds.yMax - camHalfHeight);
-
-            // Suavizado del movimiento
-            minimapCamera.transform.position = Vector3.Lerp(minimapCamera.transform.position, targetPosition, 10f * Time.deltaTime);
+            // **Envía el offset corregido al Shader**
+            minimapFogMaterial.SetVector("_Offset", minimapOffset);
         }
     }
+
 
 
 
     /*void HandlePan()
     {
         Vector2 panInput = inputActions.MinimapControls.Pan.ReadValue<Vector2>();
-        if (isPanning )//|| panInput.magnitude > 0.1f)
+
+
+        if (isPanning)
         {
-            Vector3 panMovement = new Vector3(-panInput.x, -panInput.y, 0) * panSpeed * minimapCamera.orthographicSize *Time.deltaTime;
-            Vector3 newPosition = minimapCamera.transform.position + panMovement;
+            Vector2 panMovement;
+            float mouseSensitivity = 0.005f;  // Ajusta según necesidad
+            panMovement = new Vector2(-panInput.x, -panInput.y) * mouseSensitivity * zoomLevel;
 
-            // Aplicar límites al paneo
-            newPosition.x = Mathf.Clamp(newPosition.x, mapBounds.xMin, mapBounds.xMax);
-            newPosition.y = Mathf.Clamp(newPosition.y, mapBounds.yMin, mapBounds.yMax);
 
-            minimapCamera.transform.position = newPosition;
+            // Actualizamos el Offset en el shader
+            minimapOffset += panMovement;
+            minimapFogMaterial.SetVector("_Offset", minimapOffset / zoomLevel); //Offset relativo al zoom
         }
     }*/
+
 
     // Inicia el Paneo
     void StartPanning()
@@ -222,11 +250,33 @@ public class MinimapZoom : MonoBehaviour
         isPanning = false;
     }
 
+    // Detecta si el input viene del Mouse o Gamepad
+    //bool isMousePanning = Mouse.current != null && Mouse.current.rightButton.isPressed;
+    //bool isGamepadPanning = Gamepad.current != null && Mathf.Abs(panInput.magnitude) > 0.1f;
+    /* if (isMousePanning)
+ {
+     // Movimiento con Mouse Delta (ajustamos la sensibilidad)
+     float mouseSensitivity = 0.005f;  // Ajusta según necesidad
+     panMovement = new Vector2(-panInput.x, -panInput.y) * mouseSensitivity * zoomLevel;
+ }
+ else if (isGamepadPanning)
+ {
+     // Movimiento con Gamepad Stick (usa panSpeed y DeltaTime)
+     float gamepadSensitivity = 0.005f;
+     panMovement = new Vector2(-panInput.x, -panInput.y) * gamepadSensitivity * zoomLevel;
+ }
+ else
+ {
+     panMovement = new Vector2(0,0);
+ }*/
+
     // Resetea la cámara al punto inicial
     void ResetCamera()
     {
-        minimapCamera.transform.position = defaultPosition;
-        minimapCamera.orthographicSize = defaultZoom;
+        /*minimapCamera.transform.position = defaultPosition;
+        minimapCamera.orthographicSize = defaultZoom;*/
+        minimapFogMaterial.SetFloat("_Zoom", 1);
+        minimapFogMaterial.SetVector("_Offset", new Vector2(0,0));
         UpdateZoomSlider();
     }
 
@@ -245,7 +295,8 @@ public class MinimapZoom : MonoBehaviour
     {
         if (zoomSlider != null)
         {
-            zoomSlider.value = Mathf.InverseLerp(maxZoom, minZoom, minimapCamera.orthographicSize);
+            //zoomSlider.value = Mathf.InverseLerp(maxZoom, minZoom, minimapCamera.orthographicSize);
+            zoomSlider.value = Mathf.InverseLerp(minZoom, maxZoom, minimapFogMaterial.GetFloat("_Zoom"));
         }
     }
 }

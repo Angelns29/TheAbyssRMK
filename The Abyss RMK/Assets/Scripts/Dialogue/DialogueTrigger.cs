@@ -27,6 +27,7 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     public GameObject npcDialogueIcon;
     bool startDialogue = false;
+    public GameObject imageNPC;
 
     private void FixedUpdate()
     {
@@ -41,6 +42,7 @@ public class DialogueTrigger : MonoBehaviour
         if (collision.CompareTag("Player")){
             npcDialogueIcon.SetActive(true);
             startDialogue = true;
+            imageNPC.SetActive(true);
             
         }
     }
