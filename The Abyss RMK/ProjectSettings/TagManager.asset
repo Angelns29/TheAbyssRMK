@@ -15,6 +15,7 @@ TagManager:
   - OpenWall
   - Map
   - CameraMap
+  - End
   layers:
   - Default
   - TransparentFX

@@ -69,6 +69,7 @@ public class Minimap3 : MonoBehaviour
         if (minimapFogMaterial != null)
         {
             minimapFogMaterial.SetTexture("_FogTex", fogTexture);
+
         }
         else
         {

@@ -200,17 +200,19 @@ public class MinimapZoom : MonoBehaviour
         if (isPanning)
         {
             float mouseSensitivity = 0.005f;
-            Vector2 panMovement = new Vector2(-panInput.x, -panInput.y) * mouseSensitivity * zoomLevel;
+            Vector2 panMovement = new Vector2(-panInput.x, -panInput.y) * mouseSensitivity*zoomLevel;
 
             // **Calcula los límites del paneo usando el tamaño de la textura del minimapa**
-            float maxOffsetX = (mapWidth - 1f) / (2f * zoomLevel);
-            float maxOffsetY = (mapHeight - 1f) / (2f * zoomLevel);
+            float maxOffsetX = (mapWidth - 1f) / zoomLevel;//(2f * zoomLevel);
+            float maxOffsetY = (mapHeight - 1f) / zoomLevel;//(2f * zoomLevel);
 
             // **Aplica el offset y lo limita**
             minimapOffset += panMovement;
             minimapOffset.x = Mathf.Clamp(minimapOffset.x, -maxOffsetX, maxOffsetX);
             minimapOffset.y = Mathf.Clamp(minimapOffset.y, -maxOffsetY, maxOffsetY);
+            
 
+            //minimapFogMaterial.SetVector("_Offset", minimapOffset / zoomLevel);
             // **Envía el offset corregido al Shader**
             minimapFogMaterial.SetVector("_Offset", minimapOffset);
         }

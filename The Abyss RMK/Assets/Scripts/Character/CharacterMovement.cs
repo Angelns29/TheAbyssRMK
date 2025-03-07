@@ -15,6 +15,7 @@ public class CharacterMovement : MonoBehaviour
     private Vector2 _moveInput;
 
     private bool _jumpInput;
+    private bool _sprintInput;
     public bool interactInput;
     public bool mapInput;
     [DoNotSerialize] public int gravity = 4;
@@ -62,12 +63,19 @@ public class CharacterMovement : MonoBehaviour
         _inputActions.Player.Jump.performed += i => _jumpInput = true;
         _inputActions.Player.Jump.canceled += i => _jumpInput = false;
 
+        //Jump
         if (_jumpInput && IsGrounded())
         {
             ChangeGravity();
             _jumpInput = false; // Reset jump input to avoid multiple gravity changes
         }
-
+        //Sprint
+        _inputActions.Player.Sprint.performed += i => _sprintInput = true;
+        _inputActions.Player.Sprint.canceled += i => _sprintInput = false;
+        
+        if (_sprintInput)speed = 14;
+        else speed = 8;
+        
         //Dialogues
         _inputActions.Player.Interact.performed += i => interactInput = true;
         _inputActions.Player.Interact.canceled += i => interactInput = false;

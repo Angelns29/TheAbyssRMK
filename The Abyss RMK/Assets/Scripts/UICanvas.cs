@@ -71,7 +71,7 @@ public class UICanvas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (InputManager.instance.PauseGameInput && !InputManager.instance.MapeInput)
+        if (InputManager.instance.PauseGameInput && !mapMenu.activeInHierarchy)
         {
             if (pauseMenu.activeInHierarchy)
             {
@@ -86,6 +86,8 @@ public class UICanvas : MonoBehaviour
         }
         if (InputManager.instance.MapeInput)
         {
+            //if (mapMenu.activeInHierarchy && InputManager.instance.PauseGameInput) return;
+            if (pauseMenu.activeInHierarchy) return; 
             if (!mapMenu.activeInHierarchy)
             {
                 OpenMap();

@@ -120,15 +120,19 @@ public class DialogueManager : MonoBehaviour
         isDialogueActive = false;
         UICanvas.instance.HideMenuDialogue();
         
-        if (gameObject.TryGetComponent<ChangeNPC>(out var npc))
+        /*if (gameObject.TryGetComponent<ChangeNPC>(out var npc))
         {
-            if (npc.isActiveAndEnabled) ChangeNPC.instance.DisableWall(); 
-            /*if (ChangeNPC.instance.NPCAfterKey.activeInHierarchy)
+            if (npc.isActiveAndEnabled)
             {
+                Debug.Log("ADIOS");
                 ChangeNPC.instance.DisableWall();
-            }*/
+            }
+            
+        }*/
+        if (ChangeNPC.instance.NPCAfterKey.activeInHierarchy)
+        {
+            ChangeNPC.instance.DisableWall();
         }
-        
     }
 
 }
