@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     //Collectables 
     private Dictionary<string, bool> collectables = new Dictionary<string, bool>(); //Dicionario donde se almacenarán todos los booleanos de los diferentes collectables
     public int recollectedCollectables = 0;
-    public int totalCollectables = 10;
+    public int totalCollectables;
     public bool allCollectablesRecollected = false;
     public TextMeshProUGUI collectablesText;
     public GameObject canvasCollectable;
@@ -47,7 +47,12 @@ public class GameManager : MonoBehaviour
         collectables.Add("collectableLevel22", false);
         collectables.Add("collectableLevel31", false);
         collectables.Add("collectableLevel32", false);
+        collectables.Add("collectableLevel41", false);
+        collectables.Add("collectableLevel42", false);
+        collectables.Add("collectableLevel43", false);
 
+
+        totalCollectables = collectables.Count;
     }
 
     private void LoadLocale()

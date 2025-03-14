@@ -443,6 +443,17 @@
                     "action": "Minimap",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "02b34b94-f07c-40a8-8a14-1fd03fbfad8f",
+                    "path": "<XInputController>/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Minimap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },

@@ -129,7 +129,9 @@ public class DialogueManager : MonoBehaviour
             }
             
         }*/
-        if (ChangeNPC.instance.NPCAfterKey.activeInHierarchy)
+        if (ChangeNPC.instance != null &&
+    ChangeNPC.instance.NPCAfterKey != null &&
+    ChangeNPC.instance.NPCAfterKey.activeInHierarchy)
         {
             ChangeNPC.instance.DisableWall();
         }
