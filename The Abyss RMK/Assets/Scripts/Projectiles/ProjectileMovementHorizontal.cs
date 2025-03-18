@@ -4,7 +4,8 @@ using UnityEngine;
 public class ProjectileMovementHorizontal : MonoBehaviour
 {
     private Rigidbody2D _rb;
-    private Vector2 _velocity = new(18f, 0f); // Movimiento hacia abajo
+    public string direction;
+    private Vector2 _velocity;//= new(18f, 0f); // Movimiento hacia abajo
     public Transform spawn;    // Punto de spawn para proyectiles que van hacia abajo
     public int waitTime;
 
@@ -30,12 +31,21 @@ public class ProjectileMovementHorizontal : MonoBehaviour
 
     public void Move()
     {
+        switch (direction.ToLower())
+        {
+            case "left":
+                _velocity = new Vector2(-18f, 0f);
+                break;
+            case "right":
+                _velocity = new Vector2(18f, 0f);
+                break;
+        }
         _rb.linearVelocity = _velocity; // Aplicar la velocidad hacia horizontal
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("EndProjectile"))
+        if (collision.gameObject.CompareTag("EndProjectile") ||collision.gameObject.CompareTag("Projectile"))
         {
             transform.position = spawn.position;// Mover al punto de spawn superior
         }
