@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-Catalan (Spain) (ca-ES)
   m_GUID: 1ab513919d8c7ba46841109484e4a8d5
   m_SerializeEntries:
+  - m_GUID: 30f12cecd916e8e46b1a4ad9a83ca938
+    m_Address: ControlsTable_ca-ES
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ca-ES
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c4d2faa745d7ce24ab6aeebe42737022
     m_Address: LanguagesTable_ca-ES
     m_ReadOnly: 1

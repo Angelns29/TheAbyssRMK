@@ -36,9 +36,15 @@ public class UICanvas : MonoBehaviour
     [SerializeField] private GameObject demoMenu;
     [SerializeField] private TMP_Text deathDemoText;
     [SerializeField] private TMP_Text timeDemoText;
+    [Header("Controls")]
+    [SerializeField] private GameObject _controlsMenu;
+    [SerializeField] private GameObject _keyboardsControls;
+    [SerializeField] private GameObject _gamepadControls;
+
     [Header("Controller Input")]
     [SerializeField] private GameObject _mainMenuFirst;
     [SerializeField] private GameObject _settingsFirst;
+    [SerializeField] private GameObject _controllersFirst;
     [SerializeField] private GameObject _pauseFirst;
     [SerializeField] private GameObject _dialogueFirst;
     [SerializeField] private GameObject _demoFirst;
@@ -274,5 +280,29 @@ public class UICanvas : MonoBehaviour
     {
         Time.timeScale = 1;
         mapMenu.SetActive(false);
+    }
+
+    public void OpenControls()
+    {
+        _controlsMenu.SetActive(true);
+    }
+    public void CloseControls()
+    {
+        _controlsMenu.SetActive(false);
+    }
+    public void ShowKeyboardControls()
+    {
+        if (_gamepadControls.activeInHierarchy) {
+            _gamepadControls.SetActive(false);
+            _keyboardsControls.SetActive(true);
+        }
+    }
+    public void ShowGamepadControls()
+    {
+        if (_keyboardsControls.activeInHierarchy)
+        {
+            _gamepadControls.SetActive(true);
+            _keyboardsControls.SetActive(false);
+        }
     }
 }

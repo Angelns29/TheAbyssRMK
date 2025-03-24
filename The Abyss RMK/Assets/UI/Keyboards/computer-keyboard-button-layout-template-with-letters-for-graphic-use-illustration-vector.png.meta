@@ -1,0 +1,2042 @@
+fileFormatVersion: 2
+guid: fbf6228c666657540a34484d09b1e0a6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2110708968052010662
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_0
+  - first:
+      213: 9003757840041286743
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_1
+  - first:
+      213: -2395333469922720451
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_2
+  - first:
+      213: -7352243802751937518
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_3
+  - first:
+      213: -8318508034312240470
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_4
+  - first:
+      213: 1174865810078358691
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_5
+  - first:
+      213: 253022631426526375
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_6
+  - first:
+      213: 7377354865782643663
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_7
+  - first:
+      213: 6337883766445000486
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_8
+  - first:
+      213: -1105687955334342026
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_9
+  - first:
+      213: -2527208810559961122
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_10
+  - first:
+      213: 6536315484069193035
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_11
+  - first:
+      213: 4654798537628786147
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_12
+  - first:
+      213: -4064591362886064074
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_13
+  - first:
+      213: 6232561333113785374
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_14
+  - first:
+      213: -1709372480336243960
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_15
+  - first:
+      213: -5882809568230997096
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_16
+  - first:
+      213: -3381635459815757998
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_17
+  - first:
+      213: -2433386504345131415
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_18
+  - first:
+      213: 7441135327267253040
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_19
+  - first:
+      213: 8506258797421404244
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_20
+  - first:
+      213: 8103129492017830816
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_21
+  - first:
+      213: 8032785114855568580
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_22
+  - first:
+      213: -7302380899074541981
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_23
+  - first:
+      213: 3629532888753604003
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_24
+  - first:
+      213: -859991836147423068
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_25
+  - first:
+      213: 6267993556825304210
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_26
+  - first:
+      213: 5365383493422391031
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_27
+  - first:
+      213: 8992058494666849391
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_28
+  - first:
+      213: 7540489449510370410
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_29
+  - first:
+      213: -8090158850315321017
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_30
+  - first:
+      213: -533286322515352662
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_31
+  - first:
+      213: -6143925945046841016
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_32
+  - first:
+      213: 243943447493957125
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_33
+  - first:
+      213: 5843831265093025259
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_34
+  - first:
+      213: -4345812981814144023
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_35
+  - first:
+      213: -3322665319763454082
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_36
+  - first:
+      213: 6313702209233626445
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_37
+  - first:
+      213: 7268317722599417296
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_38
+  - first:
+      213: 3060817486860825675
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_39
+  - first:
+      213: -4500423430212790685
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_40
+  - first:
+      213: -3121178831054737654
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_41
+  - first:
+      213: -5741217699405292145
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_42
+  - first:
+      213: 1497974617961265046
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_43
+  - first:
+      213: 2567493615904798075
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_44
+  - first:
+      213: 3467370190786505974
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_45
+  - first:
+      213: -1884639690127217987
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_46
+  - first:
+      213: -7640578884748910059
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_47
+  - first:
+      213: 8788566265751809529
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_48
+  - first:
+      213: 6089277952160342458
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_49
+  - first:
+      213: 5185276154807099201
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_50
+  - first:
+      213: 816698277674819153
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_51
+  - first:
+      213: -2460754899046398802
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_52
+  - first:
+      213: 903898430205022013
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_53
+  - first:
+      213: -9045927687012214515
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_54
+  - first:
+      213: -2296575684075432520
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_55
+  - first:
+      213: -2959665694815833866
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_56
+  - first:
+      213: -4594649077142059579
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_57
+  - first:
+      213: -3355496157704373547
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_58
+  - first:
+      213: 1615798347979801796
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_59
+  - first:
+      213: 6343036920325572
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_60
+  - first:
+      213: -1072803131509654155
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_61
+  - first:
+      213: -4181463050275406875
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_62
+  - first:
+      213: 2519850706239161783
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_63
+  - first:
+      213: -8128549018015982921
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_64
+  - first:
+      213: 8668314982547302502
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_65
+  - first:
+      213: -2120318440083103512
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_66
+  - first:
+      213: 9014242185161807034
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_67
+  - first:
+      213: 2142284117908723185
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_68
+  - first:
+      213: -158534353668178036
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_69
+  - first:
+      213: -7856061085158819415
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_70
+  - first:
+      213: -6222927059591786124
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_71
+  - first:
+      213: 6510191229260517773
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_72
+  - first:
+      213: 1574634924886285078
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_73
+  - first:
+      213: -1583654380220023022
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_74
+  - first:
+      213: 8282900905462068221
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_75
+  - first:
+      213: 573569550161255579
+    second: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_76
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_0
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 682
+        width: 112
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aea8f89f9eba4d10800000000000000
+      internalID: 2110708968052010662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_1
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 681
+        width: 112
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75c9c433d06c3fc70800000000000000
+      internalID: 9003757840041286743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_2
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 681
+        width: 112
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3507ae66e012ced0800000000000000
+      internalID: -2395333469922720451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_3
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 682
+        width: 112
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21457ea173597f990800000000000000
+      internalID: -7352243802751937518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_4
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 680
+        width: 115
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa206912409be8c80800000000000000
+      internalID: -8318508034312240470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_5
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 681
+        width: 113
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3acd874ca36fd4010800000000000000
+      internalID: 1174865810078358691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_6
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 681
+        width: 113
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ac00522ebae28300800000000000000
+      internalID: 253022631426526375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_7
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 681
+        width: 113
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcb59fcd921a16660800000000000000
+      internalID: 7377354865782643663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_8
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 681
+        width: 113
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6274baeb4bfa4f750800000000000000
+      internalID: 6337883766445000486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_9
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 680
+        width: 115
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67a5edda9aec7a0f0800000000000000
+      internalID: -1105687955334342026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_10
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 682
+        width: 112
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed7065df9fc8decd0800000000000000
+      internalID: -2527208810559961122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_11
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 681
+        width: 112
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4564d74d48a5ba50800000000000000
+      internalID: 6536315484069193035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_12
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 680
+        width: 112
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ed1f589b9a299040800000000000000
+      internalID: 4654798537628786147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_13
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 682
+        width: 112
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6382e0ac0bba797c0800000000000000
+      internalID: -4064591362886064074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_14
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 562
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c051dc2818e7650800000000000000
+      internalID: 6232561333113785374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_15
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 562
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 803dab829c61748e0800000000000000
+      internalID: -1709372480336243960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_16
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 562
+        width: 111
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 893825cbddf0c5ea0800000000000000
+      internalID: -5882809568230997096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_17
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 559
+        width: 112
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25721d947740211d0800000000000000
+      internalID: -3381635459815757998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_18
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 558
+        width: 112
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 966674feddfda3ed0800000000000000
+      internalID: -2433386504345131415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_19
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 561
+        width: 112
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03bef53c729344760800000000000000
+      internalID: 7441135327267253040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_20
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 560
+        width: 112
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45028d3ee4d4c0670800000000000000
+      internalID: 8506258797421404244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_21
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 562
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0abd6bc3759147070800000000000000
+      internalID: 8103129492017830816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_22
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 561
+        width: 112
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c4f200a08f2a7f60800000000000000
+      internalID: 8032785114855568580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_23
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 559
+        width: 112
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3667010134bb8aa90800000000000000
+      internalID: -7302380899074541981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_24
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 560
+        width: 112
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a581c6aee0be5230800000000000000
+      internalID: 3629532888753604003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_25
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 560
+        width: 112
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a862b04bf1b014f0800000000000000
+      internalID: -859991836147423068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_26
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 558
+        width: 114
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29c62014ee26cf650800000000000000
+      internalID: 6267993556825304210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_27
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 562
+        width: 176
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe9f293cdba57a40800000000000000
+      internalID: 5365383493422391031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_28
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 441
+        width: 176
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6cb6261f853acc70800000000000000
+      internalID: 8992058494666849391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_29
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 440
+        width: 112
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6c75aef33335a860800000000000000
+      internalID: 7540489449510370410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_30
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 442
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 741097e936bf9bf80800000000000000
+      internalID: -8090158850315321017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_31
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 439
+        width: 112
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa3e5e64ae26998f0800000000000000
+      internalID: -533286322515352662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_32
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 442
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8494d27a7e36cbaa0800000000000000
+      internalID: -6143925945046841016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_33
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 442
+        width: 113
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5065925e549a26300800000000000000
+      internalID: 243943447493957125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_34
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 442
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bedf03bd295791150800000000000000
+      internalID: 5843831265093025259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_35
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 442
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e3dfae3e1290b3c0800000000000000
+      internalID: -4345812981814144023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_36
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 442
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e775df3fe7583e1d0800000000000000
+      internalID: -3322665319763454082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_37
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 442
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4528f635b6ce9750800000000000000
+      internalID: 6313702209233626445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_38
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 439
+        width: 112
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5e632a5704ed460800000000000000
+      internalID: 7268317722599417296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_39
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 440
+        width: 112
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b44b4a299453a7a20800000000000000
+      internalID: 3060817486860825675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_40
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 441
+        width: 113
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36652570cb84b81c0800000000000000
+      internalID: -4500423430212790685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_41
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 442
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0f638ec3685fa4d0800000000000000
+      internalID: -3121178831054737654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_42
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 322
+        width: 198
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d13c0bbe81350b0800000000000000
+      internalID: -5741217699405292145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_43
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 322
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 697f12a7affd9c410800000000000000
+      internalID: 1497974617961265046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_44
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 322
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75b61b27d191a320800000000000000
+      internalID: 2567493615904798075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_45
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 320
+        width: 112
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fcab9e41d29e1030800000000000000
+      internalID: 3467370190786505974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_46
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 320
+        width: 112
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dba6d54ef2a68d5e0800000000000000
+      internalID: -1884639690127217987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_47
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 319
+        width: 112
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 512e0306cf537f590800000000000000
+      internalID: -7640578884748910059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_48
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 318
+        width: 114
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fd2e13747247f970800000000000000
+      internalID: 8788566265751809529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_49
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 320
+        width: 112
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab1a22df806718450800000000000000
+      internalID: 6089277952160342458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_50
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 322
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f9495a03dc5f740800000000000000
+      internalID: 5185276154807099201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_51
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 322
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e1b79a1ce755b00800000000000000
+      internalID: 816698277674819153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_52
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 322
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea4890bf474a9ddd0800000000000000
+      internalID: -2460754899046398802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_53
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 320
+        width: 113
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3f476d45da4b8c00800000000000000
+      internalID: 903898430205022013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_54
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 322
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0914cf22b8667280800000000000000
+      internalID: -9045927687012214515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_55
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 201
+        width: 246
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b552e6459ce020e0800000000000000
+      internalID: -2296575684075432520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_56
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 202
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f0b7964bb72de6d0800000000000000
+      internalID: -2959665694815833866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_57
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 202
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c50f5102078c30c0800000000000000
+      internalID: -4594649077142059579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_58
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 202
+        width: 111
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dab7d2d502ee61d0800000000000000
+      internalID: -3355496157704373547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_59
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 200
+        width: 113
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c4cfff59087c6610800000000000000
+      internalID: 1615798347979801796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_60
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 201
+        width: 112
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c5ee6e55f8861000800000000000000
+      internalID: 6343036920325572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_61
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 201
+        width: 112
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57db0706c33ac11f0800000000000000
+      internalID: -1072803131509654155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_62
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 202
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ebb9e6928578f5c0800000000000000
+      internalID: -4181463050275406875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_63
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 200
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b50768ddde48f220800000000000000
+      internalID: 2519850706239161783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_64
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 201
+        width: 112
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ba9ec92cb7913f80800000000000000
+      internalID: -8128549018015982921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_65
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 200
+        width: 115
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668ade7cc8a0c4870800000000000000
+      internalID: 8668314982547302502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_66
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 200
+        width: 277
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e0e228dc9d1392e0800000000000000
+      internalID: -2120318440083103512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_67
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 81
+        width: 110
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab419e50285091d70800000000000000
+      internalID: 9014242185161807034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_68
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 78
+        width: 107
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f519ef0e0ceabd10800000000000000
+      internalID: 2142284117908723185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_69
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 81
+        width: 107
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f79e468d5cccdf0800000000000000
+      internalID: -158534353668178036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_70
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 80
+        width: 137
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a9b655f01aa9f290800000000000000
+      internalID: -7856061085158819415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_71
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 81
+        width: 569
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4719ddd4fc8b3a9a0800000000000000
+      internalID: -6222927059591786124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_72
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 81
+        width: 138
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81dfe73e68d85a50800000000000000
+      internalID: 6510191229260517773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_73
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 81
+        width: 107
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61b55c41f1a3ad510800000000000000
+      internalID: 1574634924886285078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_74
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 80
+        width: 112
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21f7ef35bbab50ae0800000000000000
+      internalID: -1583654380220023022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_75
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 81
+        width: 112
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df3f3d32d76c2f270800000000000000
+      internalID: 8282900905462068221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer-keyboard-button-layout-template-with-letters-for-graphic-use-illustration-vector_76
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 81
+        width: 112
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9c975b877ab5f700800000000000000
+      internalID: 573569550161255579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

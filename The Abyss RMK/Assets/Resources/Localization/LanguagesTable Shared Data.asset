@@ -77,6 +77,20 @@ MonoBehaviour:
 '
     m_Metadata:
       m_Items: []
+  - m_Id: 17360827491659776
+    m_Key: 'ControlsButtonText
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17363083163185152
+    m_Key: KeyboardText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17363364307382272
+    m_Key: GamepadText
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

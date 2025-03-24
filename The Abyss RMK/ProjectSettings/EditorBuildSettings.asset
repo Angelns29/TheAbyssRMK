@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/The Abyss Level4.unity
     guid: 06ea81c23eae14e4d97a200dd1a017a1
+  - enabled: 1
+    path: Assets/Scenes/The Abyss Level5.unity
+    guid: 1f4d590967289474083fa3b34d0f1968
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 0c84e284a4cb5c04c9e96d0e318ba534, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}

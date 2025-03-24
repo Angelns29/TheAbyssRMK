@@ -83,6 +83,18 @@ MonoBehaviour:
       col\xB7lecciona'ls tots per tenir una recompensa, algunes estan molt amagades."
     m_Metadata:
       m_Items: []
+  - m_Id: 17360827491659776
+    m_Localized: Controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17363083163185152
+    m_Localized: "Teclat/Ratol\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17363364307382272
+    m_Localized: Control
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
