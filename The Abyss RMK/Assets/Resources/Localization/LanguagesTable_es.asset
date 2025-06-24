@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: LanguagesTable_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 73b6a911c5fd292449d282e84e1963fc, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 2935154114402189393
+  m_TableData:
+  - m_Id: 8856645632
+    m_Localized: Empezar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128427864064
+    m_Localized: Ajustes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 467122106368
+    m_Localized: Logros
+    m_Metadata:
+      m_Items: []
+  - m_Id: 802767089664
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1616566923264
+    m_Localized: Volumen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1735395749888
+    m_Localized: Sonido
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1847299780608
+    m_Localized: Pantalla Completa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1992154263552
+    m_Localized: Volver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2229849665536
+    m_Localized: Continuar...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2756427755520
+    m_Localized: Reanudar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 269253188366336
+    m_Localized: '{DialogueManager.textEspanol}'
+    m_Metadata:
+      m_Items:
+      - rid: 2935154114402189393
+  - m_Id: 280385038954496
+    m_Localized: '{DialogueManager.NPCEspanol}'
+    m_Metadata:
+      m_Items:
+      - rid: 2935154114402189393
+  - m_Id: 282010658910208
+    m_Localized: '{DialogueManager.CharacterEspanol}'
+    m_Metadata:
+      m_Items:
+      - rid: 2935154114402189393
+  - m_Id: 290267288940544
+    m_Localized: 'Idioma:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2538795990102016
+    m_Localized: "Estas llamas son fragmentos de la gran llama del Abismo, colecci\xF3nalos
+      todos para tener una recompensa, algunas de ellas est\xE1n muy escondidas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17360827491659776
+    m_Localized: Controles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17363083163185152
+    m_Localized: "Teclado/Rat\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17363364307382272
+    m_Localized: Mando
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 2935154114402189393
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 269253188366336
+        - id: 282010658910208
+        - id: 280385038954496

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2afc288c9a93d8341b0ec172fb0fc142, type: 3}
+  m_Name: Dialogue5
+  m_EditorClassIdentifier: 
+  textIngles: I have reviewed everything and there is no other way, I can never reach
+    the crack and be able to reincarnate.
+  textEspanol: "He revisado todo y no hay otro camino, nunca podr\xE9 llegar a la
+    grieta y poder reencarnar."
+  textCatalan: "He revisat tot i no hi ha cap altre cam\xED, mai no podr\xE9 arribar
+    a l'esquerda i poder reencarnar."

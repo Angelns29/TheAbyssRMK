@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: LanguagesTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: LanguagesTable
+  m_TableCollectionNameGuidString: 73b6a911c5fd292449d282e84e1963fc
+  m_Entries:
+  - m_Id: 8856645632
+    m_Key: StartTextButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128427864064
+    m_Key: SettingsTextButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 467122106368
+    m_Key: ArchivementsTextButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 802767089664
+    m_Key: QuitTextButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1616566923264
+    m_Key: VolumeTextButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1735395749888
+    m_Key: SoundTextButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1847299780608
+    m_Key: FullScreenTextButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1992154263552
+    m_Key: BackTextButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2229849665536
+    m_Key: ContinueTextButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2756427755520
+    m_Key: ResumeTextButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 269253188366336
+    m_Key: dialogueTexts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 280385038954496
+    m_Key: npcName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 282010658910208
+    m_Key: characterName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 290267288940544
+    m_Key: languageText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2538795990102016
+    m_Key: 'CollectableExplanation
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17360827491659776
+    m_Key: 'ControlsButtonText
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17363083163185152
+    m_Key: KeyboardText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17363364307382272
+    m_Key: GamepadText
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 2935154097750278144
+  references:
+    version: 2
+    RefIds:
+    - rid: 2935154097750278144
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1738704348022

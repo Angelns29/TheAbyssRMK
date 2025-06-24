@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2afc288c9a93d8341b0ec172fb0fc142, type: 3}
+  m_Name: Dialogue8
+  m_EditorClassIdentifier: 
+  textIngles: THROUGH THE WALL?!
+  textEspanol: "\xA1\xBFATRAVESAR LA PARED?!"
+  textCatalan: "\rTRAVESSAR LA PARET?!"

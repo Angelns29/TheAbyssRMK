@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: ControlsTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: ControlsTable
+  m_TableCollectionNameGuidString: ebe3da20323b6e141bf9ed0873fbd453
+  m_Entries:
+  - m_Id: 28209164288
+    m_Key: MovementText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35628888064
+    m_Key: GravityText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38715895808
+    m_Key: PauseText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41739988992
+    m_Key: InteractText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45032517632
+    m_Key: RunText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47989501952
+    m_Key: MapOpenText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52452241408
+    m_Key: ResetViewText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55950290944
+    m_Key: CenterPlayerText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1520622219264
+    m_Key: OnMapText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1622250205184
+    m_Key: MoveText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1791783972864
+    m_Key: MovementMapText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3625932140544
+    m_Key: Movement2Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3829724983296
+    m_Key: ResetGamepad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4032657993728
+    m_Key: CenterGamepad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4225147187200
+    m_Key: ScrollGamepad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4707580227584
+    m_Key: MapText
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 2829177021827383381
+  references:
+    version: 2
+    RefIds:
+    - rid: 2829177021827383381
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1742851297511

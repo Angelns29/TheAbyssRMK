@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: LanguagesTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 73b6a911c5fd292449d282e84e1963fc, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 2935154114402189392
+  m_TableData:
+  - m_Id: 8856645632
+    m_Localized: Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 128427864064
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 467122106368
+    m_Localized: Archivements
+    m_Metadata:
+      m_Items: []
+  - m_Id: 802767089664
+    m_Localized: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1616566923264
+    m_Localized: Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1735395749888
+    m_Localized: Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1847299780608
+    m_Localized: FullScreen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1992154263552
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2229849665536
+    m_Localized: Continue...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2756427755520
+    m_Localized: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 269253188366336
+    m_Localized: '{DialogueManager.textEnglish}'
+    m_Metadata:
+      m_Items:
+      - rid: 2935154114402189392
+  - m_Id: 280385038954496
+    m_Localized: '{DialogueManager.NPCEnglish}'
+    m_Metadata:
+      m_Items:
+      - rid: 2935154114402189392
+  - m_Id: 282010658910208
+    m_Localized: '{DialogueManager.CharacterEnglish}'
+    m_Metadata:
+      m_Items:
+      - rid: 2935154114402189392
+  - m_Id: 290267288940544
+    m_Localized: 'Language:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2538795990102016
+    m_Localized: These flames are fragments of the great flame of the Abyss, collect
+      them all for a reward, some of them are very hidden.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17360827491659776
+    m_Localized: Controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17363083163185152
+    m_Localized: Keyboard/Mouse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17363364307382272
+    m_Localized: Gamepad
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 2935154114402189392
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 269253188366336
+        - id: 282010658910208
+        - id: 280385038954496
